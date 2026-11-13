@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Petr Belyaev · Smart Vision AI — AI sales agents and ClickUp systems</title>
+<meta name="description" content="Smart Vision AI is a one-person AI implementation studio run by Petr Belyaev. AI sales and support agents, ClickUp implementation, CRM and messenger integrations through n8n, and managed services after launch.">
+<link rel="canonical" href="https://smartvisionai.agency/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://smartvisionai.agency/">
+<meta property="og:title" content="Petr Belyaev · Smart Vision AI">
+<meta property="og:description" content="I build AI sales agents and ClickUp systems that turn leads into booked deals for SMBs.">
+<meta property="og:image" content="https://smartvisionai.agency/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f6f2ec">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Smart Vision AI","url":"https://smartvisionai.agency/","image":"https://smartvisionai.agency/petr-belyaev-800.jpg","email":"petr@smartvisionai.agency","areaServed":"Worldwide","address":{"@type":"PostalAddress","addressLocality":"Querétaro","addressCountry":"MX"},"founder":{"@type":"Person","name":"Petr Belyaev","jobTitle":"Founder"},"knowsLanguage":["en","ru"]}
+</script>
+<style>
+:root{--bg:#f6f2ec;--paper:#fffdf9;--ink:#1b1f24;--muted:#5d6670;--line:#e4ddd2;--accent:#1f6f66;--accent-ink:#ffffff;--soft:#e8f1ef;--radius:18px;--max:1080px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+header.top{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:-.01em;color:var(--ink);text-decoration:none}
+.brand svg{width:30px;height:30px}
+nav a{margin-left:22px;color:var(--muted);text-decoration:none;font-size:15px}
+nav a:hover{color:var(--ink)}
+.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:center;padding:48px 0 72px}
+.eyebrow{display:inline-block;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);background:var(--soft);padding:6px 12px;border-radius:999px;margin-bottom:22px}
+h1{font-size:clamp(34px,4.6vw,54px);line-height:1.08;letter-spacing:-.025em;margin:0 0 22px}
+.lead{font-size:19px;color:var(--muted);margin:0 0 30px;max-width:40ch}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:30px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:12px;font-weight:600;font-size:16px;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--accent);color:var(--accent-ink);box-shadow:0 6px 18px rgba(31,111,102,.25)}
+.btn-ghost{background:var(--paper);color:var(--ink);border:1px solid var(--line)}
+.facts{display:flex;flex-wrap:wrap;gap:8px 22px;color:var(--muted);font-size:15px;padding:0;margin:0;list-style:none}
+.facts li::before{content:"·";margin-right:8px;color:var(--accent);font-weight:700}
+.facts li:first-child::before{content:none;margin:0}
+.portrait{position:relative}
+.portrait img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:28px;display:block;box-shadow:0 30px 60px -30px rgba(27,31,36,.45)}
+.portrait figcaption{position:absolute;left:18px;bottom:18px;background:rgba(255,253,249,.94);border-radius:14px;padding:12px 16px;font-size:14px;line-height:1.35;box-shadow:0 8px 24px rgba(27,31,36,.12)}
+.portrait figcaption b{display:block;font-size:16px}
+section{padding:72px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(26px,3vw,36px);letter-spacing:-.02em;line-height:1.15;margin:0 0 14px}
+.section-lead{color:var(--muted);max-width:60ch;margin:0 0 40px}
+.outcomes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.outcome{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.outcome .n{font-size:14px;font-weight:700;color:var(--accent);margin-bottom:10px}
+.outcome p{margin:0;font-weight:600;font-size:18px;line-height:1.35}
+.services{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.service{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:30px}
+.service h3{margin:0 0 8px;font-size:20px;letter-spacing:-.01em}
+.service p{margin:0;color:var(--muted)}
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.about p{margin:0 0 16px}
+.steps{list-style:none;padding:0;margin:0;counter-reset:s;display:grid;gap:14px}
+.steps li{counter-increment:s;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px 20px 18px 64px;position:relative}
+.steps li::before{content:counter(s);position:absolute;left:20px;top:17px;width:28px;height:28px;border-radius:50%;background:var(--soft);color:var(--accent);font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center}
+.steps b{display:block}
+.steps span{color:var(--muted);font-size:15px}
+.tools{display:flex;flex-wrap:wrap;gap:10px}
+.tools span{background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-size:15px}
+.contact{background:var(--ink);color:#f3efe8;border-radius:28px;padding:56px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.contact h2{color:#fff}
+.contact p{color:#c9c3ba;margin:0}
+.contact .ctas{margin:0;justify-content:flex-end}
+.contact .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.3)}
+.contact .btn-primary{background:#ffffff;color:var(--ink);box-shadow:none}
+footer{padding:40px 0 56px;color:var(--muted);font-size:14px}
+footer p{margin:0 0 8px}
+@media (max-width:860px){
+ .hero,.about,.contact{grid-template-columns:1fr}
+ .hero{gap:36px;padding-top:24px}
+ .portrait{max-width:420px}
+ .outcomes,.services{grid-template-columns:1fr}
+ .contact{padding:36px 28px}
+ .contact .ctas{justify-content:flex-start}
+ nav{display:none}
+ section{padding:56px 0}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="/" aria-label="Smart Vision AI home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#1f6f66"/><path d="M8 16c2.6-4.6 5.3-6.9 8-6.9s5.4 2.3 8 6.9c-2.6 4.6-5.3 6.9-8 6.9S10.6 20.6 8 16z" fill="none" stroke="#fff" stroke-width="2"/><circle cx="16" cy="16" r="3.2" fill="#fff"/></svg>
+      Smart Vision AI
+    </a>
+    <nav aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#approach">How I work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div>
+        <span class="eyebrow">AI implementation studio</span>
+        <h1>I build AI sales agents and ClickUp systems that turn leads into booked deals.</h1>
+        <p class="lead">For small and mid-sized service businesses that sell through messengers and CRMs and are drowning in manual follow-ups.</p>
+        <div class="ctas">
+          <a class="btn btn-primary" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1QaeAtBbRm9E6dCOqYcLi57awQORRnsjI7x1G6maX2-XyD0c8wLhdUrsz5z5yCTS_GYiABaUnU" target="_blank" rel="noopener">Book a call</a>
+          <a class="btn btn-ghost" href="mailto:petr@smartvisionai.agency">petr@smartvisionai.agency</a>
+        </div>
+        <ul class="facts">
+          <li>Querétaro, Mexico (GMT-6)</li>
+          <li>English &amp; Russian</li>
+          <li>Working with ClickUp since 2023</li>
+        </ul>
+      </div>
+      <figure class="portrait">
+        <img src="/petr-belyaev-800.jpg" srcset="/petr-belyaev-400.jpg 400w, /petr-belyaev-800.jpg 800w" sizes="(max-width:860px) 90vw, 400px" alt="Petr Belyaev, founder of Smart Vision AI" width="800" height="800">
+        <figcaption><b>Petr Belyaev</b>Founder, Smart Vision AI<br>ClickUp Verified Service Partner</figcaption>
+      </figure>
+    </div>
+
+    <section aria-labelledby="outcomes-h">
+      <h2 id="outcomes-h">What changes for your business</h2>
+      <p class="section-lead">One person owns the whole build — from the first call to support after launch.</p>
+      <div class="outcomes">
+        <div class="outcome"><div class="n">01</div><p>Lead handling and follow-ups run automatically</p></div>
+        <div class="outcome"><div class="n">02</div><p>Projects and client operations live in one place</p></div>
+        <div class="outcome"><div class="n">03</div><p>CRM, messengers and AI agents work as one workflow</p></div>
+      </div>
+    </section>
+
+    <section id="services" aria-labelledby="services-h">
+      <h2 id="services-h">Services</h2>
+      <p class="section-lead">Implementation projects and ongoing managed services.</p>
+      <div class="services">
+        <div class="service">
+          <h3>AI sales &amp; support agents</h3>
+          <p>Agents that answer, qualify and follow up leads in messengers and on your website, and hand the conversation to your team when a person is needed.</p>
+        </div>
+        <div class="service">
+          <h3>ClickUp implementation</h3>
+          <p>Workspace structure, processes, statuses and automations for delivery and client operations — designed around how your team actually works.</p>
+        </div>
+        <div class="service">
+          <h3>CRM &amp; messenger integrations</h3>
+          <p>Kommo/amoCRM, Bitrix24, Telegram and WhatsApp connected to each other and to ClickUp through n8n and Make.</p>
+        </div>
+        <div class="service">
+          <h3>Managed services after launch</h3>
+          <p>Monitoring, weekly improvements, reporting and new automations as your business grows.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="approach" aria-labelledby="approach-h">
+      <div class="about">
+        <div>
+          <h2 id="approach-h">About Smart Vision AI</h2>
+          <p>Smart Vision AI is a one-person AI implementation studio run by Petr Belyaev. I serve small and mid-sized service businesses that sell through messengers and CRMs.</p>
+          <p>I design ClickUp workspaces for delivery and client operations, build AI sales and support agents, and connect them to your CRM and messengers. After launch I stay on as your managed-service partner.</p>
+          <p>You work directly with me — no account managers, no hand-offs.</p>
+        </div>
+        <ol class="steps">
+          <li><b>Intro call</b><span>30 minutes to understand your sales process and see where automation pays off.</span></li>
+          <li><b>Written scope</b><span>What will be built, how it connects and what you get — agreed before work starts.</span></li>
+          <li><b>Build &amp; launch</b><span>ClickUp, agents and integrations set up, tested and handed over with clear instructions.</span></li>
+          <li><b>Support &amp; growth</b><span>Monitoring, improvements and new automations on an ongoing basis.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section aria-labelledby="tools-h">
+      <h2 id="tools-h">Tools and integrations</h2>
+      <p class="section-lead">The stack I build with every day.</p>
+      <div class="tools">
+        <span>ClickUp</span><span>n8n</span><span>Make</span><span>Kommo / amoCRM</span><span>Bitrix24</span><span>Telegram</span><span>WhatsApp</span><span>Google Workspace</span><span>AI sales &amp; support agents</span><span>Workflow automation</span><span>AI-assisted reporting</span>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-h" style="border-top:0">
+      <div class="contact">
+        <div>
+          <h2 id="contact-h">Let’s talk about your workflow</h2>
+          <p>Book a 30-minute video call or write to me directly.</p>
+        </div>
+        <div class="ctas">
+          <a class="btn btn-primary" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1QaeAtBbRm9E6dCOqYcLi57awQORRnsjI7x1G6maX2-XyD0c8wLhdUrsz5z5yCTS_GYiABaUnU" target="_blank" rel="noopener">Book a call</a>
+          <a class="btn btn-ghost" href="mailto:petr@smartvisionai.agency">Email me</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Smart Vision AI · Petr Belyaev · Querétaro, Mexico</p>
+    <p>ClickUp is a trademark of Mango Technologies, Inc. Smart Vision AI is an independent service partner and is not affiliated with or acting on behalf of ClickUp.</p>
+  </footer>
+</div>
+</body>
+</html>
