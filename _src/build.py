@@ -21,6 +21,7 @@ import sys
 
 from jinja2 import Environment, FileSystemLoader, StrictUndefined
 
+sys.dont_write_bytecode = True
 SRC = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(SRC)
 sys.path.insert(0, SRC)
