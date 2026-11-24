@@ -19,11 +19,11 @@ SITE = {
 
 # Navigation in the header, in order
 NAV = [
-    ("/services/", "Services"),
-    ("/clickup-partner/", "ClickUp"),
-    ("/cases/", "Cases"),
-    ("/blog/", "Blog"),
-    ("/contact/", "Contact"),
+    ("/services/", "nav_services"),
+    ("/clickup-partner/", "nav_clickup"),
+    ("/cases/", "nav_cases"),
+    ("/blog/", "nav_blog"),
+    ("/contact/", "nav_contact"),
 ]
 SITE["nav"] = NAV
 

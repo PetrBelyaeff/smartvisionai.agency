@@ -20,5 +20,10 @@
 - [Is your business visible in ChatGPT?](https://smartvisionai.agency/blog/is-your-business-visible-in-chatgpt/): A practical method to check whether AI assistants mention your brand — and what the numbers can and cannot tell you.
 - [When an AI sales agent should hand over to a person](https://smartvisionai.agency/blog/ai-sales-agent-human-handoff/): The handoff is where most AI sales agents lose deals. How I design the moment an agent passes a lead to a manager.
 
+## Languages
+- English (default): https://smartvisionai.agency/
+- Spanish: https://smartvisionai.agency/es/
+- Russian: https://smartvisionai.agency/ru/
+
 ## Contact
 - [Contact page](https://smartvisionai.agency/contact/)

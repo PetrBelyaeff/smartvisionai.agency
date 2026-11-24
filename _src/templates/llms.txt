@@ -18,5 +18,10 @@
 - [{{ p.nav }}]({{ site.url }}{{ p.url }}): {{ p.summary }}
 {% endfor %}
 
+## Languages
+- English (default): {{ site.url }}/
+- Spanish: {{ site.url }}/es/
+- Russian: {{ site.url }}/ru/
+
 ## Contact
 - [Contact page]({{ site.url }}/contact/)

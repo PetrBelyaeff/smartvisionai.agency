@@ -1,0 +1,48 @@
+{% extends "post_layout.html" %}
+{% block article %}
+      <p>Cuando un dueño de negocio imagina un agente de ventas con IA, imagina la conversación: rápida, amable, siempre en línea. Cuando yo construyo uno, la mayor parte de mi atención va a otro momento: el segundo en que el agente se detiene y una persona toma el control. En ese traspaso los agentes ganan o pierden negocios.</p>
+      <p>Un traspaso mal diseñado se ve así: el cliente pasó diez minutos explicándole su situación al agente, aparece un vendedor y lo primero que escribe es «¡Hola! ¿En qué te puedo ayudar?». El cliente tiene que repetir todo. Algunos no lo hacen.</p>
+      <p>Así diseño el traspaso en los agentes que construyo.</p>
+
+      <h2>1. Decide para qué es el agente, y para qué no</h2>
+      <p>Antes de escribir una sola instrucción, acuerdo con el dueño cuál es el trabajo del agente. Normalmente es: responder las primeras preguntas, calificar y llevar un prospecto caliente a una llamada o a un vendedor. Casi nunca es «cerrar la venta solo».</p>
+      <p>Esa decisión define el traspaso. Si el trabajo del agente termina en un prospecto calificado, entonces el prospecto calificado <em>es</em> el disparador, no una falla del agente.</p>
+
+      <h2>2. Escribe disparadores explícitos</h2>
+      <p>«Pasa la conversación cuando haga falta» no es una instrucción. El agente necesita disparadores concretos. Los que uso con más frecuencia:</p>
+      <ul>
+        <li><strong>El prospecto está calificado</strong>: el agente tiene las respuestas que necesitan tus vendedores (por ejemplo presupuesto, plazo, destino, tamaño de la familia) y el cliente aceptó el siguiente paso.</li>
+        <li><strong>El cliente pide hablar con una persona</strong>, con las palabras que sean. Nunca discutas eso.</li>
+        <li><strong>Dinero o compromisos</strong>: descuentos fuera de lista, condiciones de pago especiales, garantías, preguntas legales. Aquí el agente no improvisa.</li>
+        <li><strong>La respuesta no está en la base de conocimiento</strong>. Adivinar es peor que «te comunico con un colega que sabe esto con exactitud».</li>
+        <li><strong>Emociones</strong>: una queja, frustración, un cliente actual con un problema.</li>
+      </ul>
+
+      <h2>3. Pasa el contexto, no solo el chat</h2>
+      <p>El vendedor debe poder continuar la conversación sin pedirle al cliente que repita nada. Así que, al momento del traspaso, el agente hace tres cosas:</p>
+      <ol>
+        <li><strong>Llena los campos del CRM</strong>: no un muro de texto en una nota, sino los campos específicos que usa tu embudo: qué quiere el cliente, los datos clave, qué se le ofreció.</li>
+        <li><strong>Escribe un resumen breve</strong> para el vendedor: quién es, qué quiere, qué ya se respondió, qué queda pendiente.</li>
+        <li><strong>Mueve el negocio</strong> a la etapa correcta y lo asigna al vendedor correcto, para que aparezca en su fila de trabajo, no solo en un chat que nadie revisa.</li>
+      </ol>
+
+      <h2>4. Dile al cliente qué sigue</h2>
+      <p>Del lado del cliente, el traspaso debe sentirse como pasar con un colega, no como quedarse colgado. El agente dice quién va a responder y más o menos cuándo, y esa promesa tiene que ser cierta. Si los vendedores no trabajan de noche, el agente no debería decir «un asesor te responde en cinco minutos» a las 2 a. m.</p>
+      <blockquote>Un mensaje de traspaso que funciona: «Le pasé tus datos a Ana, nuestra especialista en este programa. Te escribe aquí mañana por la mañana; no vas a tener que repetir nada».</blockquote>
+
+      <h2>5. Asegúrate de que una persona sí lo tome</h2>
+      <p>Las fallas más dolorosas que he visto no fueron malas respuestas de la IA. Fueron traspasos que no llegaron a ningún lado: un aviso en un chat que nadie lee, un negocio asignado a un vendedor de vacaciones, un paso técnico que falló en silencio mientras reportaba éxito.</p>
+      <p>Por eso el traspaso recibe el mismo trato que cualquier integración en producción:</p>
+      <ul>
+        <li>Reglas de distribución que saben quién está trabajando, incluidas vacaciones y días libres.</li>
+        <li>Un aviso si un prospecto traspasado no se atendió en el tiempo acordado.</li>
+        <li>Monitoreo del resultado real —el negocio está en la fila del vendedor—, no de «solicitud enviada».</li>
+      </ul>
+
+      <h2>6. Revisa los traspasos cada semana al principio</h2>
+      <p>Durante las primeras semanas después del lanzamiento leo las conversaciones donde el agente pasó el control, y las que no pasó pero probablemente debió hacerlo. La mayoría de los ajustes son pequeños: un disparador que faltaba, un campo del CRM sin llenar, un mensaje que sonaba demasiado robótico. Cada cambio en las instrucciones del agente queda en una bitácora, así que si después pasa algo raro, se rastrea hasta un cambio concreto.</p>
+
+      <h2>En resumen</h2>
+      <p>Un agente de IA no reemplaza a tu equipo de ventas; cambia el punto donde tu equipo empieza la conversación. Mientras mejor sea el traspaso, más tarde —y más caliente— será ese inicio.</p>
+      <p>Si quieres un agente así para tu negocio, aquí está <a href="{{ link('/services/ai-sales-agents/') }}">cómo construyo agentes de IA para ventas y atención</a>.</p>
+{% endblock %}

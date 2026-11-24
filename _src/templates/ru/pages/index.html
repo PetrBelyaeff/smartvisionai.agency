@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="hero">
+      <div>
+        <span class="eyebrow">Студия внедрения AI</span>
+        <h1>Мы создаем AI&#8209;агентов продаж и системы в ClickUp, которые превращают лиды в назначенные встречи.</h1>
+        <p class="lead">Для малого и среднего сервисного бизнеса, который продает через мессенджеры и CRM и тонет в ручных дожимах.</p>
+        <div class="ctas">
+          <a class="btn btn-primary" href="{{ site.booking }}" target="_blank" rel="noopener">{{ t('book') }}</a>
+          <a class="btn btn-ghost" href="mailto:{{ site.email }}">{{ site.email }}</a>
+        </div>
+        <ul class="facts">
+          <li>Керетаро, Мексика (GMT-6)</li>
+          <li>Русский и английский</li>
+          <li>Работаю с ClickUp с 2023 года</li>
+        </ul>
+      </div>
+      <figure class="portrait">
+        <img src="{{ asset('/petr-belyaev-4x5-v2-660.jpg') }}" srcset="{{ asset('/petr-belyaev-4x5-v2-660.jpg') }} 660w, {{ asset('/petr-belyaev-4x5-v2.jpg') }} 1200w" sizes="330px" alt="Петр Беляев, основатель Smart Vision AI" width="330" height="412">
+        <figcaption><b>Петр Беляев</b>Основатель, Smart Vision AI<br>ClickUp Verified Service Partner</figcaption>
+      </figure>
+    </div>
+
+    <section aria-labelledby="outcomes-h">
+      <h2 id="outcomes-h">Что меняется в твоем бизнесе</h2>
+      <p class="section-lead">Весь проект ведет один человек — от первого звонка до поддержки после запуска.</p>
+      <div class="outcomes">
+        <div class="outcome"><div class="n">01</div><p>Обработка лидов и дожимы идут автоматически</p></div>
+        <div class="outcome"><div class="n">02</div><p>Проекты и работа с клиентами — в одном месте</p></div>
+        <div class="outcome"><div class="n">03</div><p>CRM, мессенджеры и AI-агенты работают как единый процесс</p></div>
+      </div>
+    </section>
+
+    <section id="services" aria-labelledby="services-h">
+      <h2 id="services-h">Услуги</h2>
+      <p class="section-lead">Проекты внедрения и сопровождение. У каждой услуги своя страница: объем работ, процесс и ответы на частые вопросы.</p>
+      <div class="cards">
+        {% for s in services %}
+        <a class="card" href="{{ link(s.en_url) }}">
+          <h3>{{ s.nav }}{% if s.en_url == '/services/ai-search-visibility/' %}<span class="badge">{{ t('new') }}</span>{% endif %}</h3>
+          <p>{{ s.summary }}</p>
+          <span class="more">{{ t('learn_more') }}</span>
+        </a>
+        {% endfor %}
+        <a class="card" href="{{ link('/clickup-partner/') }}">
+          <span class="tag">ClickUp Verified Service Partner</span>
+          <h3>Тарифы ClickUp и внедрение через партнера</h3>
+          <p>Аудит твоего текущего пространства, переезд с других инструментов и платные тарифы ClickUp с сопровождением внедрения.</p>
+          <span class="more">О партнерстве</span>
+        </a>
+      </div>
+    </section>
+
+    <section aria-labelledby="cases-h">
+      <h2 id="cases-h">Последние работы</h2>
+      <p class="section-lead">Что я делаю и веду для клиентов. Названия клиентов на сайте не раскрываю — отрасль и решение говорят сами за себя.</p>
+      <div class="cards">
+        {% for c in cases %}
+        <a class="card" href="{{ link(c.en_url) }}">
+          <span class="tag">{{ c.industry }}</span>
+          <h3>{{ c.summary }}</h3>
+          <span class="more">{{ t('read_case') }}</span>
+        </a>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section id="approach" aria-labelledby="approach-h">
+      <div class="about">
+        <div>
+          <h2 id="approach-h">О Smart Vision AI</h2>
+          <p>Smart Vision AI — студия внедрения AI, которую веду я, Петр Беляев. Работаю с малым и средним сервисным бизнесом, который продает через мессенджеры и CRM.</p>
+          <p>Я проектирую рабочие пространства в ClickUp под исполнение проектов и работу с клиентами, собираю AI-агентов продаж и поддержки и подключаю их к твоей CRM и мессенджерам. После запуска остаюсь на сопровождении.</p>
+          <p>Ты работаешь напрямую со мной — без аккаунт-менеджеров и передачи по цепочке.</p>
+        </div>
+        <ol class="steps">
+          <li><b>Знакомство</b><span>30 минут, чтобы понять твой процесс продаж и увидеть, где автоматизация окупится.</span></li>
+          <li><b>Письменное ТЗ</b><span>Что будет сделано, как это связано и что ты получишь — согласуем до начала работ.</span></li>
+          <li><b>Сборка и запуск</b><span>ClickUp, агенты и интеграции настроены, проверены и переданы с понятными инструкциями.</span></li>
+          <li><b>Поддержка и развитие</b><span>Мониторинг, доработки и новые автоматизации на постоянной основе.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section aria-labelledby="tools-h">
+      <h2 id="tools-h">Инструменты и интеграции</h2>
+      <p class="section-lead">С чем я работаю каждый день.</p>
+      <ul class="tools">
+        <li>ClickUp</li><li>n8n</li><li>Make</li><li>Kommo / amoCRM</li><li>Bitrix24</li><li>Shopify</li><li>Telegram</li><li>WhatsApp</li><li>Google Workspace</li><li>AI-агенты Suvvy</li><li>ChatGPT, Claude, Perplexity</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="blog-h">
+      <h2 id="blog-h">Из блога</h2>
+      <p class="section-lead">Заметки из практической работы с клиентами.</p>
+      <div class="cards">
+        {% for p in posts %}
+        <a class="card" href="{{ link(p.en_url) }}">
+          <span class="tag">{{ p.read }}</span>
+          <h3>{{ p.nav }}</h3>
+          <p>{{ p.summary }}</p>
+          <span class="more">{{ t('read') }}</span>
+        </a>
+        {% endfor %}
+      </div>
+    </section>
+{% endblock %}

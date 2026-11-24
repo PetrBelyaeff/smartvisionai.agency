@@ -6,6 +6,7 @@
   "@type": "BlogPosting",
   "headline": page.nav,
   "description": page.description,
+  "inLanguage": lang,
   "url": site.url + page.url,
   "datePublished": page.date,
   "dateModified": page.updated,
@@ -18,14 +19,14 @@
 {% block content %}
     <article class="prose">
       <header class="page-hero" style="padding-bottom:24px">
-        <span class="eyebrow">Blog</span>
+        <span class="eyebrow">{{ t('blog') }}</span>
         <h1>{{ page.nav }}</h1>
-        <div class="meta"><span>Petr Belyaev</span><time datetime="{{ page.date }}">{{ page.date_label }}</time><span>{{ page.read }}</span></div>
+        <div class="meta"><span>{{ 'Петр Беляев' if lang == 'ru' else 'Petr Belyaev' }}</span><time datetime="{{ page.date }}">{{ page.date_label }}</time><span>{{ page.read }}</span></div>
       </header>
       {% block article %}{% endblock %}
       <div class="author">
         <img src="{{ asset('/petr-belyaev-4x5-v2-660.jpg') }}" alt="Petr Belyaev" width="56" height="56">
-        <p><b>Petr Belyaev</b> runs Smart Vision AI, a one-person AI implementation studio: AI sales agents, ClickUp systems and integrations for service businesses. ClickUp Verified Service Partner.</p>
+        <p><b>{{ 'Петр Беляев' if lang == 'ru' else 'Petr Belyaev' }}</b> {{ t('author_bio') }}</p>
       </div>
     </article>
 {% endblock %}

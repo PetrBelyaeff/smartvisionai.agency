@@ -5,9 +5,9 @@
       <h1>This page doesn’t exist</h1>
       <p class="lead">The link may be old or mistyped. Here is where to go instead.</p>
       <div class="ctas">
-        <a class="btn btn-primary" href="/">Home</a>
-        <a class="btn btn-ghost" href="/services/">Services</a>
-        <a class="btn btn-ghost" href="/blog/">Blog</a>
+        <a class="btn btn-primary" href="{{ link('/') }}">Home</a>
+        <a class="btn btn-ghost" href="{{ link('/services/') }}">Services</a>
+        <a class="btn btn-ghost" href="{{ link('/blog/') }}">Blog</a>
       </div>
     </div>
 {% endblock %}

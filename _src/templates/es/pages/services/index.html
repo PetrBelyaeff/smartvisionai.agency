@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="page-hero">
+      <span class="eyebrow">Servicios</span>
+      <h1>Proyectos de implementación y soporte continuo</h1>
+      <p class="lead">Construyo el sistema que lleva un prospecto hasta una llamada agendada y mantiene ordenado el trabajo con clientes, y después lo mantengo funcionando. Elige un servicio o combínalos.</p>
+    </div>
+
+    <section aria-labelledby="list-h" style="border-top:0;padding-top:0">
+      <h2 id="list-h" style="position:absolute;left:-9999px">Todos los servicios</h2>
+      <div class="cards">
+        {% for s in services %}
+        <a class="card" href="{{ link(s.en_url) }}">
+          <h3>{{ s.nav }}{% if s.en_url == '/services/ai-search-visibility/' %}<span class="badge">{{ t('new') }}</span>{% endif %}</h3>
+          <p>{{ s.summary }}</p>
+          <span class="more">{{ t('learn_more') }}</span>
+        </a>
+        {% endfor %}
+        <a class="card" href="{{ link('/clickup-partner/') }}">
+          <span class="tag">{{ t('partner_tag') }}</span>
+          <h3>ClickUp Verified Service Partner</h3>
+          <p>Auditoría del espacio de trabajo, migración, capacitación y planes de pago de ClickUp a través de un partner.</p>
+          <span class="more">Sobre la alianza</span>
+        </a>
+      </div>
+    </section>
+
+    <section aria-labelledby="how-h">
+      <div class="about">
+        <div>
+          <h2 id="how-h">Cómo empieza cada proyecto</h2>
+          <p>Con una llamada de 30 minutos y un alcance por escrito. El alcance dice qué se va a construir, cómo se conecta con tus herramientas, cuánto cuesta, qué costos de operación pagas directamente y cómo sabremos que funciona.</p>
+          <p>No empiezo a trabajar hasta que estés de acuerdo con el alcance. Eso nos protege a ambos del clásico «yo pensé que también iba a…».</p>
+        </div>
+        <ol class="steps">
+          <li><b>Llamada inicial</b><span>Tu proceso de ventas, tus herramientas, dónde se pierden tiempo y prospectos.</span></li>
+          <li><b>Alcance por escrito</b><span>Entregables, plazos, precio y criterios de aceptación.</span></li>
+          <li><b>Construcción y lanzamiento</b><span>Configurado, probado con casos reales y entregado con instrucciones.</span></li>
+          <li><b>Soporte y crecimiento</b><span>Soporte continuo si quieres que me quede contigo.</span></li>
+        </ol>
+      </div>
+    </section>
+{% endblock %}

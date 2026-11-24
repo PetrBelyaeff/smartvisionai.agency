@@ -1,0 +1,49 @@
+{% extends "post_layout.html" %}
+{% block article %}
+      <p>Cada vez más compradores empiezan con una pregunta a un asistente de IA en lugar de un buscador: «qué agencia me ayuda a obtener la residencia en Grecia», «el mejor operador para un viaje a ver auroras boreales», «quién configura ClickUp para una agencia pequeña». El asistente responde con unos cuantos nombres. Si el tuyo no está entre ellos, nunca te enteras de ese comprador.</p>
+      <p>La mayoría de los dueños de negocio con los que hablo no tienen idea de si aparecen en esas respuestas. Algunos le preguntaron una vez a ChatGPT, vieron su nombre o no, y sacaron una conclusión. Eso no es una medición. Así lo mido para mis clientes, y esto es lo que los números pueden y no pueden decirte.</p>
+
+      <h2>Paso 1. Haz las preguntas que hacen tus compradores, sin tu nombre</h2>
+      <p>El error más común es preguntar «¿qué sabes de [mi empresa]?». El asistente te contestará con gusto, y eso no prueba nada. Los compradores que todavía no te conocen no escriben tu nombre.</p>
+      <p>Por eso el primer paso es una lista de preguntas reales de compradores sobre tu nicho, en los idiomas de tu mercado. Normalmente de 30 a 100 bastan para ver un patrón. Buenas fuentes: tus llamadas de venta, las preguntas que más reciben tu agente de IA o tus vendedores, y las consultas con las que ya trabaja tu contratista de SEO o contenido.</p>
+      <blockquote>Una buena pregunta suena a comprador, no a marketing: «cuánto tarda la residencia en Portugal», no «mejores servicios migratorios Portugal 2026».</blockquote>
+
+      <h2>Paso 2. Pregunta a más de un asistente, más de una vez</h2>
+      <p>ChatGPT, Claude y Perplexity dan respuestas distintas a la misma pregunta, y cada uno responde distinto en cada corrida. Una corrida es una foto, no un hecho.</p>
+      <p>Por eso hago cada pregunta a cada asistente varias veces por corrida, con la búsqueda web activada, y cuento el <em>porcentaje</em> de respuestas que mencionan la marca. «Mencionado en el 14 % de las respuestas» es un número que se puede seguir. «Ayer ChatGPT nos mencionó» es una anécdota.</p>
+
+      <h2>Paso 3. Lee las respuestas como un analista de la competencia</h2>
+      <p>En cada respuesta registro cuatro cosas:</p>
+      <ol>
+        <li><strong>Si se menciona la marca</strong>, con cualquiera de sus nombres, variantes o dominios. Las marcas se escriben de muchísimas formas, así que tengo un pequeño diccionario de variantes por cliente; sin él se pierde parte de las menciones.</li>
+        <li><strong>Si se enlaza el sitio web</strong> como fuente.</li>
+        <li><strong>La posición</strong> entre las empresas nombradas.</li>
+        <li><strong>A quién nombran en tu lugar</strong>. Suele ser lo más valioso: la lista de competidores que los asistentes recomiendan para las preguntas de tus compradores, y las fuentes que citan para ellos.</li>
+      </ol>
+
+      <h2>Paso 4. Ten una línea base antes de que alguien «optimice»</h2>
+      <p>Si estás por pagar GEO (generative engine optimization) —contenido y cambios pensados para aparecer en las respuestas de la IA—, mide primero. Si no, en tres meses tendrás el reporte del contratista y nada con qué compararlo.</p>
+      <p>Las líneas base suelen ser aleccionadoras. En una que medí para un cliente de un nicho de servicios competido, la marca apareció en 1 de 92 respuestas a preguntas que no incluían su nombre. No es un desastre: es un punto de partida que hace visible cada cambio posterior.</p>
+
+      <h2>Lo que los números no pueden decirte</h2>
+      <p>Prefiero decirlo desde el principio a que un cliente lo descubra después:</p>
+      <ul>
+        <li><strong>Las respuestas por API se parecen, pero no son iguales, a lo que ve una persona.</strong> Consulto a los asistentes por su API, sin historial, ubicación ni personalización. Eso hace que las corridas sean repetibles —lo que necesitas para seguir el cambio—, pero la pantalla de una persona puede ser distinta.</li>
+        <li><strong>Las AI Overviews de Google son otra historia.</strong> No se pueden consultar de la misma forma y requieren un servicio pagado de datos de búsqueda. Si las respuestas con IA de Google importan en tu mercado, son un complemento aparte con su precio.</li>
+        <li><strong>Visibilidad no es lo mismo que ventas.</strong> Que te mencionen más es un indicador adelantado. Si eso trae compradores lo responde tu CRM: pregunta a los nuevos prospectos dónde supieron de ti y agrega «asistente de IA» como opción.</li>
+      </ul>
+
+      <h2>Qué hacer con el resultado</h2>
+      <p>Si el porcentaje de menciones es bajo, las palancas habituales son las mismas que ayudan en la búsqueda normal, con algunos agregados:</p>
+      <ul>
+        <li>Páginas que responden exactamente lo que preguntan los compradores, en lenguaje sencillo, una pregunta por sección.</li>
+        <li>Datos claros y fáciles de citar: a quién atiendes, dónde, por cuánto, cuánto tarda.</li>
+        <li>Datos estructurados (schema.org) y un archivo <code>llms.txt</code> sencillo que describe tu sitio para las herramientas de IA.</li>
+        <li>Presencia en las fuentes que los asistentes ya citan en tu nicho: la lista de competidores del paso 3 muestra cuáles son.</li>
+      </ul>
+      <p>Luego vuelves a hacer las mismas preguntas el mes siguiente y ves si el número se movió.</p>
+
+      <h2>¿Lo puedes hacer tú mismo?</h2>
+      <p>Sí, con una hoja de cálculo y paciencia: 50 preguntas, tres asistentes y tres repeticiones son 450 respuestas que leer cada mes. Justo por eso lo automaticé: un flujo en n8n envía las preguntas según un horario, analiza las respuestas, guarda el historial en Google Sheets y manda un resumen breve por Telegram.</p>
+      <p>Si quieres tenerlo para tu negocio, aquí está <a href="{{ link('/services/ai-search-visibility/') }}">cómo funciona el servicio de visibilidad en IA</a>.</p>
+{% endblock %}

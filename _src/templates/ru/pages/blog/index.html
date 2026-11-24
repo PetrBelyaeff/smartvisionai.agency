@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="page-hero">
+      <span class="eyebrow">Блог</span>
+      <h1>Заметки из практической работы с клиентами</h1>
+      <p class="lead">AI-агенты в продажах, ClickUp, автоматизация и видимость в нейросетях — что работает, что ломается и как я с этим справляюсь.</p>
+    </div>
+
+    <section aria-label="Статьи" style="border-top:0;padding-top:0">
+      <div class="posts">
+        {% for p in posts %}
+        <a class="post-card" href="{{ link(p.en_url) }}">
+          <div class="meta"><time datetime="{{ p.date }}">{{ p.date_label }}</time><span>{{ p.read }}</span></div>
+          <h2>{{ p.nav }}</h2>
+          <p>{{ p.summary }}</p>
+        </a>
+        {% endfor %}
+      </div>
+    </section>
+{% endblock %}

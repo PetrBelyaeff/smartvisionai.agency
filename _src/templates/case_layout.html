@@ -6,6 +6,7 @@
   "@type": "Article",
   "headline": page.title.split(' · ')[0],
   "description": page.description,
+  "inLanguage": lang,
   "url": site.url + page.url,
   "dateModified": page.updated,
   "author": {"@id": site.url + "/#petr", "@type": "Person", "name": "Petr Belyaev"},
@@ -15,20 +16,20 @@
 {% endblock %}
 {% block content %}
     <div class="page-hero">
-      <span class="eyebrow">Case · {{ page.industry }}</span>
+      <span class="eyebrow">{{ t('case') }} · {{ page.industry }}</span>
       <h1>{% block h1 %}{% endblock %}</h1>
       <p class="lead">{% block lead %}{% endblock %}</p>
-      <ul class="tools small" aria-label="Stack">{% for t in page.stack %}<li>{{ t }}</li>{% endfor %}</ul>
+      <ul class="tools small" aria-label="{{ t('stack') }}">{% for t in page.stack %}<li>{{ t }}</li>{% endfor %}</ul>
     </div>
 
     <section aria-labelledby="sit-h">
       <div class="split">
         <div>
-          <h2 id="sit-h">The situation</h2>
+          <h2 id="sit-h">{{ t('situation') }}</h2>
           {% block situation %}{% endblock %}
         </div>
         <div>
-          <h2>What I built</h2>
+          <h2>{{ t('built') }}</h2>
           {% block built %}{% endblock %}
         </div>
       </div>
@@ -39,20 +40,20 @@
     <section aria-labelledby="note-h">
       <div class="split">
         <div>
-          <h2 id="note-h">Where it stands</h2>
+          <h2 id="note-h">{{ t('status') }}</h2>
           {% block status %}{% endblock %}
         </div>
-        <div class="note"><b>About client names.</b> I don’t publish client names or figures from their business without permission. The setup described here is real; details that could identify the client are left out.</div>
+        <div class="note"><b>{{ t('names_note_b') }}</b> {{ t('names_note') }}</div>
       </div>
     </section>
 
     <section aria-labelledby="svc-h">
-      <h2 id="svc-h">Services used</h2>
+      <h2 id="svc-h">{{ t('services_used') }}</h2>
       <div class="cards">
         {% for url in services_used %}{% set r = page_by_url[url] %}
-        <a class="card" href="{{ link(r.url) }}"><h3>{{ r.nav }}</h3><p>{{ r.summary }}</p><span class="more">Learn more</span></a>
+        <a class="card" href="{{ link(r.en_url) }}"><h3>{{ r.nav }}</h3><p>{{ r.summary }}</p><span class="more">{{ t('learn_more') }}</span></a>
         {% endfor %}
       </div>
     </section>
 {% endblock %}
-{% block contact_title %}Have a similar setup in mind?{% endblock %}
+{% block contact_title %}{{ t('case_contact_title') }}{% endblock %}

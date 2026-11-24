@@ -1,0 +1,38 @@
+{% extends "service_layout.html" %}
+{% set faq = [
+  ("¿Qué significa «Verified Service Partner»?", "ClickUp tiene un programa de partners para consultores que implementan ClickUp para clientes. Firmé el acuerdo de partner y completé la capacitación de partners de ClickUp, y Smart Vision AI aparece como partner de servicios. No me convierte en empleado de ClickUp: trabajo para ti, no para ClickUp."),
+  ("¿Cómo se cobra comprar ClickUp a través de ti?", "Ves el plan y su precio antes de decidir. El trabajo de implementación se cotiza por separado en el alcance por escrito."),
+  ("Estamos en el plan gratuito. ¿Deberíamos cambiar?", "Solo si una función de pago resuelve un problema real: más automatizaciones, invitados, reportes de tiempo, dashboards o permisos. Te digo qué plan te conviene, incluso cuando el gratuito es suficiente."),
+  ("¿Puedes ayudar a un equipo que ya tiene plan de pago?", "Sí. La auditoría, la limpieza, las automatizaciones y la capacitación sirven en cualquier plan."),
+] %}
+{% set related = ["/services/clickup-implementation/", "/cases/barbershop-franchise-clickup-platform/", "/services/crm-messenger-integrations/"] %}
+{% block eyebrow %}ClickUp Verified Service Partner{% endblock %}
+{% block h1 %}Tu partner de ClickUp: del primer espacio de trabajo al plan de pago{% endblock %}
+{% block lead %}Smart Vision AI es ClickUp Verified Service Partner. Ayudo a equipos pequeños y medianos a elegir el plan correcto, configurar el espacio de trabajo, migrar desde otras herramientas y lograr que el equipo lo use, con una sola persona responsable del resultado.{% endblock %}
+{% block body %}
+    <section aria-labelledby="what-h">
+      <h2 id="what-h">Qué hago como partner</h2>
+      <div class="cards three">
+        <div class="card"><h3>Auditoría del espacio de trabajo</h3><p>Revisión de tu ClickUp actual: estructura, estados, campos, automatizaciones, permisos. Recibes por escrito qué conservar, qué corregir y qué quitar.</p></div>
+        <div class="card"><h3>Elección de plan</h3><p>Qué plan de ClickUp le conviene a tu equipo, y cuándo el plan gratuito es suficiente.</p></div>
+        <div class="card"><h3>Implementación</h3><p>Espacio de trabajo construido en torno a tus servicios, clientes y proceso de entrega. <a href="{{ link('/services/clickup-implementation/') }}">Más sobre la implementación</a>.</p></div>
+        <div class="card"><h3>Migración</h3><p>Desde Trello, Asana, Notion, tareas de Bitrix24 u hojas de cálculo, empezando por el trabajo activo.</p></div>
+        <div class="card"><h3>Integraciones</h3><p>ClickUp conectado con tu CRM, mensajería y Google Workspace mediante n8n.</p></div>
+        <div class="card"><h3>Capacitación</h3><p>Sesiones cortas para el equipo y el dueño, más instrucciones por escrito dentro de ClickUp.</p></div>
+      </div>
+    </section>
+
+    <section aria-labelledby="why-h">
+      <div class="split">
+        <div>
+          <h2 id="why-h">Por qué trabajar con un partner</h2>
+          <ul class="checks">
+            <li>ClickUp es tan flexible que fácilmente se vuelve un caos. Un partner que construye espacios de trabajo para clientes te ahorra la prueba y error.</li>
+            <li>Un solo contacto para el plan, la configuración y las integraciones.</li>
+            <li>Uso ClickUp todos los días para llevar mi propio estudio: registro de tiempo, reportes a clientes, automatizaciones de tareas.</li>
+          </ul>
+        </div>
+        <div class="note"><b>Independencia.</b> ClickUp es una marca registrada de Mango Technologies, Inc. Smart Vision AI es un partner de servicios independiente y no está afiliado a ClickUp ni actúa en su nombre.</div>
+      </div>
+    </section>
+{% endblock %}

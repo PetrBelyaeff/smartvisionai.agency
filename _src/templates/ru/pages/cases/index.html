@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="page-hero">
+      <span class="eyebrow">Кейсы</span>
+      <h1>Что я делаю и веду для клиентов</h1>
+      <p class="lead">Реальные проекты по отраслям и решениям. Названия клиентов и цифры их бизнеса без разрешения не публикую.</p>
+    </div>
+
+    <section aria-label="Список кейсов" style="border-top:0;padding-top:0">
+      <div class="cards">
+        {% for c in cases %}
+        <a class="card" href="{{ link(c.en_url) }}">
+          <span class="tag">{{ c.industry }}</span>
+          <h3>{{ c.summary }}</h3>
+          <ul class="tools small" aria-label="{{ t('stack') }}">{% for x in c.stack %}<li>{{ x }}</li>{% endfor %}</ul>
+          <span class="more">{{ t('read_case') }}</span>
+        </a>
+        {% endfor %}
+      </div>
+    </section>
+{% endblock %}
+{% block contact_title %}{{ t('case_contact_title') }}{% endblock %}

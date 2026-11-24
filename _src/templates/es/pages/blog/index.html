@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="page-hero">
+      <span class="eyebrow">Blog</span>
+      <h1>Notas desde el trabajo práctico con clientes</h1>
+      <p class="lead">Agentes de IA en ventas, ClickUp, automatización y visibilidad en buscadores con IA: qué funciona, qué falla y cómo lo resuelvo.</p>
+    </div>
+
+    <section aria-label="Artículos" style="border-top:0;padding-top:0">
+      <div class="posts">
+        {% for p in posts %}
+        <a class="post-card" href="{{ link(p.en_url) }}">
+          <div class="meta"><time datetime="{{ p.date }}">{{ p.date_label }}</time><span>{{ p.read }}</span></div>
+          <h2>{{ p.nav }}</h2>
+          <p>{{ p.summary }}</p>
+        </a>
+        {% endfor %}
+      </div>
+    </section>
+{% endblock %}

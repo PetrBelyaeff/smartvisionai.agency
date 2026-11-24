@@ -1,0 +1,42 @@
+{% extends "service_layout.html" %}
+{% set faq = [
+  ("Ya usamos ClickUp, pero es un caos. ¿Lo puedes arreglar?", "Sí, y es el punto de partida más común. Empiezo con una auditoría: qué espacios, listas, estados y campos existen, cuáles usa la gente de verdad y dónde se pierde el trabajo. Luego propongo una estructura objetivo y migro a ella sin perder el historial."),
+  ("¿Necesitamos un plan de pago de ClickUp?", "No siempre. Muchos equipos pequeños empiezan con el plan gratuito. Un plan de pago vale la pena cuando necesitas más automatizaciones, invitados, reportes de tiempo o dashboards. Como ClickUp Verified Service Partner te ayudo a elegir el plan y a contratarlo."),
+  ("¿ClickUp puede funcionar con nuestro CRM y mensajería?", "Sí. Conecto ClickUp con Kommo/amoCRM, Bitrix24, Telegram, WhatsApp y Google Workspace mediante n8n o Make; por ejemplo, un negocio cerrado en el CRM crea un proyecto en ClickUp y las actualizaciones de tareas llegan al chat del cliente."),
+  ("¿Cómo logras que el equipo realmente lo use?", "Diseñando el espacio según cómo ya trabaja el equipo, no según una plantilla, y con capacitaciones cortas e instrucciones por escrito. Una estructura a la que hay que obligar a la gente es una estructura equivocada."),
+  ("¿Nos puedes migrar desde Trello, Asana, Notion u hojas de cálculo?", "Sí. Planeo la migración para que el trabajo activo se mueva primero y el historial se conserve donde importa."),
+] %}
+{% set related = ["/clickup-partner/", "/cases/barbershop-franchise-clickup-platform/", "/services/crm-messenger-integrations/"] %}
+{% block eyebrow %}Servicio · ClickUp{% endblock %}
+{% block h1 %}Implementación de ClickUp para la operación y la atención a clientes{% endblock %}
+{% block lead %}Un espacio de trabajo donde cada proyecto, solicitud de cliente y fecha límite tiene un solo lugar, un responsable y un estado, construido según cómo trabaja tu equipo en realidad. Llevo mi propio estudio y los proyectos de mis clientes en ClickUp desde 2023.{% endblock %}
+{% block body %}
+    <section aria-labelledby="what-h">
+      <div class="split">
+        <div>
+          <h2 id="what-h">Qué configuro</h2>
+          <p class="section-lead" style="margin-bottom:0">Un sistema que el equipo usa sin que nadie lo recuerde, y que un director entiende de un vistazo.</p>
+        </div>
+        <ul class="checks">
+          <li><b>Estructura</b>: espacios, carpetas y listas que reflejan tus servicios y clientes.</li>
+          <li><b>Estados y campos personalizados</b> que siguen tu flujo real, de la solicitud a la entrega.</li>
+          <li><b>Automatizaciones</b>: asignación, fechas límite, tareas recurrentes, notificaciones.</li>
+          <li><b>Registro de tiempo y reportes</b> por cliente, proyecto y tipo de trabajo, listos para facturar.</li>
+          <li><b>Dashboards</b> para el dueño: carga de trabajo, pendientes vencidos, lo entregado en la semana.</li>
+          <li><b>Acceso para clientes</b>: los invitados ven sus propias tareas y avances, nada más.</li>
+          <li><b>Documentos y base de conocimiento</b>: estándares, instrucciones y onboarding junto al trabajo.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section aria-labelledby="how-h">
+      <h2 id="how-h">Cómo avanza el proyecto</h2>
+      <ol class="steps">
+        <li><b>Auditoría o diagnóstico</b><span>Cómo fluye hoy el trabajo, qué herramientas se usan, dónde se pierden tareas.</span></li>
+        <li><b>Estructura objetivo por escrito</b><span>Espacios, listas, estados, campos, automatizaciones y accesos, acordados antes de construir.</span></li>
+        <li><b>Construcción y migración</b><span>Espacio configurado, trabajo activo migrado, integraciones conectadas.</span></li>
+        <li><b>Capacitación</b><span>Sesiones cortas para el equipo y el dueño, más instrucciones por escrito dentro de ClickUp.</span></li>
+        <li><b>Primer mes de soporte</b><span>Observo cómo lo usa el equipo y ajusto lo que no encaja.</span></li>
+      </ol>
+    </section>
+{% endblock %}

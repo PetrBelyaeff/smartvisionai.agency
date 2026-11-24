@@ -1,0 +1,54 @@
+{% extends "service_layout.html" %}
+{% set faq = [
+  ("¿Es lo mismo que GEO o AEO?", "Es la parte de medición. GEO (generative engine optimization) es el trabajo para que los asistentes de IA te mencionen: contenido, estructura, presencia en las fuentes que leen. Este servicio te dice si ese trabajo está dando resultado, de forma independiente de quien produce el contenido."),
+  ("¿Las respuestas coinciden con lo que mis clientes ven en ChatGPT?", "Se parecen, pero no son idénticas. Consulto los modelos por su API con la búsqueda web activada, sin historial, ubicación ni personalización de un usuario. Eso hace que la medición sea repetible, que importa más para seguir el cambio que coincidir con la pantalla de una persona."),
+  ("Las respuestas de la IA cambian cada vez. ¿El número tiene sentido?", "Una sola corrida es una foto. Por eso cada pregunta se hace varias veces y el resultado se reporta como el porcentaje de respuestas que te mencionan. Lo que importa es la tendencia a lo largo de las semanas."),
+  ("¿Revisas las AI Overviews de Google?", "No por defecto. Las respuestas con IA de Google no se pueden consultar de la misma forma y requieren un servicio pagado de datos de búsqueda. Si son importantes en tu mercado, las agrego como una opción aparte con su precio."),
+  ("¿También puedes mejorar los resultados?", "El servicio está pensado como un marcador honesto. Puedo recomendar qué cambiar en tu sitio —estructura, marcado schema, un archivo llms.txt, respuestas a las preguntas de los compradores— e implementar la parte técnica. La producción de contenido a gran escala la hace mejor un equipo de contenido."),
+] %}
+{% set related = ["/blog/is-your-business-visible-in-chatgpt/", "/services/crm-messenger-integrations/", "/services/managed-services/"] %}
+{% block eyebrow %}Servicio · Visibilidad en IA{% endblock %}
+{% block h1 %}¿ChatGPT recomienda tu negocio, o a tu competencia?{% endblock %}
+{% block lead %}Cada vez más compradores le preguntan a un asistente de IA en lugar de buscar en Google. Reviso periódicamente si ChatGPT, Claude y Perplexity mencionan tu marca en las preguntas que hacen tus compradores, a qué competidores nombran en su lugar y cómo cambia eso con el tiempo.{% endblock %}
+{% block body %}
+    <section aria-labelledby="what-h">
+      <div class="split">
+        <div>
+          <h2 id="what-h">Qué recibes</h2>
+          <p class="section-lead" style="margin-bottom:0">Un número que puedes seguir mes a mes, en lugar de capturas de pantalla y opiniones.</p>
+        </div>
+        <ul class="checks">
+          <li><b>Línea base</b>: con qué frecuencia te mencionan hoy los asistentes de IA en tus preguntas clave.</li>
+          <li><b>Mapa de competidores</b>: qué empresas recomiendan los asistentes en tu lugar y para qué preguntas.</li>
+          <li><b>Revisión de enlaces</b>: si tu sitio aparece citado como fuente.</li>
+          <li><b>Historial</b> en Google Sheets: cada corrida, cada pregunta, cada asistente.</li>
+          <li><b>Un resumen breve</b> por Telegram o correo después de cada corrida: qué cambió y dónde.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section aria-labelledby="how-h">
+      <h2 id="how-h">Cómo funciona</h2>
+      <ol class="steps">
+        <li><b>Preguntas</b><span>Juntos hacemos la lista de preguntas que los compradores reales le hacen a un asistente sobre tu nicho: normalmente de 30 a 100, en los idiomas de tu mercado. Las preguntas no incluyen el nombre de tu marca.</span></li>
+        <li><b>Diccionario de marca</b><span>Todas las formas en que aparece tu marca: nombres, variantes de escritura, dominios. Sin él se pierde parte de las menciones.</span></li>
+        <li><b>Corridas programadas</b><span>Un flujo en n8n envía cada pregunta a ChatGPT, Claude y Perplexity con búsqueda web, varias veces por corrida, cada semana o cada mes.</span></li>
+        <li><b>Análisis de respuestas</b><span>En cada respuesta: si se menciona la marca, si se enlaza el sitio, en qué posición, qué competidores aparecen.</span></li>
+        <li><b>Reporte</b><span>Porcentaje de respuestas que te mencionan, comparado con la línea base y con la corrida anterior.</span></li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="fit-h">
+      <div class="split">
+        <div>
+          <h2 id="fit-h">Te sirve si</h2>
+          <ul class="checks plain">
+            <li>Pagas por contenido SEO o GEO y quieres una verificación independiente del resultado.</li>
+            <li>Tus compradores investigan decisiones complejas: servicios, viajes, educación, B2B.</li>
+            <li>Quieres saber a qué competidores favorecen los asistentes de IA, y por qué.</li>
+          </ul>
+        </div>
+        <div class="note"><b>Cómo se cobra.</b> Una configuración única (preguntas, diccionario, flujo, primera línea base) más una cuota mensual por las corridas programadas y los resúmenes. El costo de uso de la IA depende del número de preguntas y repeticiones; lo estimo en el alcance antes de empezar.</div>
+      </div>
+    </section>
+{% endblock %}

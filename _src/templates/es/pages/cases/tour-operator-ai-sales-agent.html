@@ -1,0 +1,26 @@
+{% extends "case_layout.html" %}
+{% set services_used = ["/services/ai-sales-agents/", "/services/crm-messenger-integrations/"] %}
+{% block h1 %}Un agente de ventas con IA 24/7 que conoce cada tour: un operador turístico regional{% endblock %}
+{% block lead %}Un operador turístico con unos 30 tours y 100 opciones de hospedaje necesitaba responder cada consulta rápido y bien, también de noche y en fin de semana, y pasarla a los asesores lista para una llamada.{% endblock %}
+{% block situation %}
+          <p>Las consultas llegan por el sitio web y por varios servicios de mensajería. Las preguntas son detalladas: fechas, tamaño del grupo, qué incluye, dónde hospedarse. Responder bien exige conocer todo el catálogo, y los asesores pasaban el día en primeras respuestas en lugar de vender.</p>
+          <p>El proyecto se acordó como construcción a precio fijo en cinco etapas, con especificación escrita y criterios de aceptación.</p>
+{% endblock %}
+{% block built %}
+          <ul class="checks">
+            <li><b>Base de conocimiento</b> de tours y hospedaje, estructurada para que el agente encuentre la opción correcta en lugar de adivinar.</li>
+            <li><b>Diseño de dos agentes</b>: un agente de ventas principal lleva la conversación y un subagente de catálogo busca tours y hospedaje y devuelve opciones estructuradas.</li>
+            <li><b>Calificación y traspaso</b>: el agente reúne fechas, grupo y preferencias, ofrece una llamada o reunión en línea y pasa el prospecto a un asesor en amoCRM.</li>
+            <li><b>Canales</b>: sitio web y mensajería, todo en un solo embudo del CRM.</li>
+            <li><b>Infraestructura del cliente</b>: el servidor de automatización es del cliente, con respaldos diarios.</li>
+          </ul>
+{% endblock %}
+{% block extra %}
+    <section aria-labelledby="why-h">
+      <h2 id="why-h">Por qué dos agentes y no uno</h2>
+      <p class="section-lead">Un agente que lleva la conversación y además busca en un catálogo grande suele hacer mal las dos cosas: instrucciones largas, respuestas lentas, opciones mezcladas. Separar la búsqueda del catálogo en un subagente mantiene al agente de ventas enfocado en el cliente y hace que las respuestas del catálogo sean consistentes y fáciles de probar.</p>
+    </section>
+{% endblock %}
+{% block status %}
+          <p>El agente se construye por etapas según la especificación acordada; el cliente acepta cada etapa antes de empezar la siguiente. Cada cambio en los agentes queda en una bitácora.</p>
+{% endblock %}

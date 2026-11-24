@@ -9,7 +9,7 @@
     <section aria-label="Case list" style="border-top:0;padding-top:0">
       <div class="cards">
         {% for c in cases %}
-        <a class="card" href="{{ link(c.url) }}">
+        <a class="card" href="{{ link(c.en_url) }}">
           <span class="tag">{{ c.industry }}</span>
           <h3>{{ c.summary }}</h3>
           <ul class="tools small" aria-label="Stack">{% for t in c.stack %}<li>{{ t }}</li>{% endfor %}</ul>

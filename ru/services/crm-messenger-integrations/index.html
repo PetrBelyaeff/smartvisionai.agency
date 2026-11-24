@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Интеграции CRM и мессенджеров на n8n · Smart Vision AI</title>
+<meta name="description" content="Kommo/amoCRM, Bitrix24, Shopify, WhatsApp, Telegram и ClickUp в одном процессе через n8n и Make: распределение лидов, дожим заказов, уведомления и отчеты.">
+<link rel="canonical" href="https://smartvisionai.agency/ru/services/crm-messenger-integrations/">
+<link rel="alternate" hreflang="en" href="https://smartvisionai.agency/services/crm-messenger-integrations/">
+<link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/services/crm-messenger-integrations/">
+<link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/services/crm-messenger-integrations/">
+<link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/services/crm-messenger-integrations/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Smart Vision AI">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:url" content="https://smartvisionai.agency/ru/services/crm-messenger-integrations/">
+<meta property="og:title" content="Интеграции CRM и мессенджеров на n8n · Smart Vision AI">
+<meta property="og:description" content="Kommo/amoCRM, Bitrix24, Shopify, WhatsApp, Telegram и ClickUp в одном процессе через n8n и Make: распределение лидов, дожим заказов, уведомления и отчеты.">
+<meta property="og:image" content="https://smartvisionai.agency/og-v2.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f6f2ec">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "ProfessionalService", "@id": "https://smartvisionai.agency/#org", "name": "Smart Vision AI", "url": "https://smartvisionai.agency/", "image": "https://smartvisionai.agency/petr-belyaev-4x5-v2.jpg", "logo": "https://smartvisionai.agency/favicon.svg", "email": "petr@smartvisionai.agency", "areaServed": ["United States", "Mexico", "Canada", "Worldwide"], "address": {"@type": "PostalAddress", "addressLocality": "Querétaro", "addressCountry": "MX"}, "founder": {"@type": "Person", "@id": "https://smartvisionai.agency/#petr", "name": "Petr Belyaev", "jobTitle": "Founder", "url": "https://smartvisionai.agency/"}, "knowsLanguage": ["en", "ru"]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://smartvisionai.agency/ru/"}, {"@type": "ListItem", "position": 2, "name": "Услуги", "item": "https://smartvisionai.agency/ru/services/"}, {"@type": "ListItem", "position": 3, "name": "Интеграции CRM и мессенджеров"}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Service", "name": "Интеграции CRM и мессенджеров", "inLanguage": "ru", "description": "Kommo/amoCRM, Bitrix24, Shopify, WhatsApp, Telegram и ClickUp в одном процессе через n8n и Make: распределение лидов, дожим заказов, уведомления и отчеты.", "url": "https://smartvisionai.agency/ru/services/crm-messenger-integrations/", "provider": {"@id": "https://smartvisionai.agency/#org"}, "areaServed": ["United States", "Mexico", "Canada", "Worldwide"]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Почему n8n, а не встроенная автоматизация CRM?", "acceptedAnswer": {"@type": "Answer", "text": "Встроенная автоматизация хороша внутри одной системы. Когда данные ходят между CRM, магазином, мессенджерами и ClickUp, n8n дает одно место, где весь процесс виден, логируется и легко меняется. Make использую, если он уже есть у клиента."}}, {"@type": "Question", "name": "Где работает n8n?", "acceptedAnswer": {"@type": "Answer", "text": "На сервере, который принадлежит тебе, или в облаке n8n. Для клиентских проектов я предпочитаю отдельный сервер на каждого клиента: твои автоматизации, данные и доступы остаются твоими, а проблема одного клиента никогда не задевает другого."}}, {"@type": "Question", "name": "Что будет, если интеграция сломается?", "acceptedAnswer": {"@type": "Answer", "text": "В процессы встроены уведомления об ошибках, поэтому сбой виден в тот же день, а не через неделю. На сопровождении я сам мониторю и чиню; без него ты получаешь документацию, по которой другой разработчик сможет подхватить работу."}}, {"@type": "Question", "name": "Можешь работать с тем, что у нас уже есть?", "acceptedAnswer": {"@type": "Answer", "text": "Да. Обычно начинаю с того, что читаю существующее — вебхуки, сценарии, воронки — и оставляю то, что работает. Ничего не удаляю без бэкапа и твоего явного согласия."}}]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">К содержимому</a>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="/ru/" aria-label="Smart Vision AI — Главная">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#1f6f66"/><path d="M8 16c2.6-4.6 5.3-6.9 8-6.9s5.4 2.3 8 6.9c-2.6 4.6-5.3 6.9-8 6.9S10.6 20.6 8 16z" fill="none" stroke="#fff" stroke-width="2"/><circle cx="16" cy="16" r="3.2" fill="#fff"/></svg>
+      Smart Vision AI
+    </a>
+    <nav class="nav" aria-label="Основное меню">
+<a href="/ru/services/" aria-current="page">Услуги</a><a href="/ru/clickup-partner/">ClickUp</a><a href="/ru/cases/">Кейсы</a><a href="/ru/blog/">Блог</a>      <span class="langs" aria-label="Язык"><a href="/services/crm-messenger-integrations/" hreflang="en" lang="en">EN</a><a href="/es/services/crm-messenger-integrations/" hreflang="es" lang="es">ES</a><b aria-current="true">RU</b></span>
+      <a class="btn btn-primary" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1QaeAtBbRm9E6dCOqYcLi57awQORRnsjI7x1G6maX2-XyD0c8wLhdUrsz5z5yCTS_GYiABaUnU" target="_blank" rel="noopener">Записаться на звонок</a>
+    </nav>
+    <details class="menu">
+      <summary aria-label="Открыть меню">Меню</summary>
+      <div class="menu-panel">
+        <a href="/ru/">Главная</a>
+<a href="/ru/services/">Услуги</a><a href="/ru/clickup-partner/">ClickUp</a><a href="/ru/cases/">Кейсы</a><a href="/ru/blog/">Блог</a><a href="/ru/contact/">Контакты</a>        <div class="langs" aria-label="Язык"><a href="/services/crm-messenger-integrations/" hreflang="en" lang="en">EN</a><a href="/es/services/crm-messenger-integrations/" hreflang="es" lang="es">ES</a><b aria-current="true">RU</b></div>
+        <a class="btn btn-primary" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1QaeAtBbRm9E6dCOqYcLi57awQORRnsjI7x1G6maX2-XyD0c8wLhdUrsz5z5yCTS_GYiABaUnU" target="_blank" rel="noopener">Записаться на звонок</a>
+      </div>
+    </details>
+  </header>
+
+  <main id="main">
+    <nav aria-label="Навигация">
+      <ol class="crumbs">
+<li><a href="/ru/">Главная</a></li><li><a href="/ru/services/">Услуги</a></li>        <li aria-current="page">Интеграции CRM и мессенджеров</li>
+      </ol>
+    </nav>
+    <div class="page-hero">
+      <span class="eyebrow">Услуга · Интеграции</span>
+      <h1>Интеграции CRM и мессенджеров, чтобы твои инструменты работали как одна система</h1>
+      <p class="lead">Kommo/amoCRM, Bitrix24, Shopify, WhatsApp, Telegram, Google Workspace и ClickUp связаны через n8n — лиды, заказы и задачи переходят между ними без копирования вручную.</p>
+      <div class="ctas" style="margin-bottom:0">
+        <a class="btn btn-primary" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1QaeAtBbRm9E6dCOqYcLi57awQORRnsjI7x1G6maX2-XyD0c8wLhdUrsz5z5yCTS_GYiABaUnU" target="_blank" rel="noopener">Записаться на звонок</a>
+        <a class="btn btn-ghost" href="mailto:petr@smartvisionai.agency">Написать мне</a>
+      </div>
+    </div>
+
+    <section aria-labelledby="what-h">
+      <h2 id="what-h">Процессы, которые я собираю чаще всего</h2>
+      <p class="section-lead">Каждый заменяет ручную рутину, которую кто-то в команде делает каждый день — или забывает сделать.</p>
+      <div class="cards three">
+        <div class="card"><h3>Распределение лидов</h3><p>Лиды из рекламы, форм на сайте, TikTok и мессенджеров попадают в нужную воронку CRM и к нужному менеджеру, без дублей и спама.</p></div>
+        <div class="card"><h3>Дожим заказов</h3><p>Неоплаченные заказы, брошенные корзины и неудачные платежи запускают сообщение в WhatsApp и задачу в CRM по графику.</p></div>
+        <div class="card"><h3>CRM ↔ ClickUp</h3><p>Закрытая сделка создает проект в ClickUp; статус исполнения возвращается в карточку CRM.</p></div>
+        <div class="card"><h3>Уведомления команде</h3><p>Оповещения в Telegram о новых лидах, просроченных задачах и сбоях — только те, на которые кто-то реагирует.</p></div>
+        <div class="card"><h3>Обновления клиенту</h3><p>Комментарии в задачах клиента приходят в его чат, и это не зависит от того, вспомнит ли кто-то их отправить.</p></div>
+        <div class="card"><h3>Отчеты</h3><p>Данные из CRM, ClickUp и таблиц собираются в регулярные отчеты для собственника.</p></div>
+      </div>
+    </section>
+
+    <section aria-labelledby="how-h">
+      <div class="split">
+        <div>
+          <h2 id="how-h">Как я работаю с интеграциями</h2>
+          <ul class="checks">
+            <li><b>Сначала читаю, потом меняю</b>: существующие вебхуки, сценарии и воронки сначала инвентаризирую.</li>
+            <li><b>Бэкап перед каждой правкой</b> боевого процесса и письменная запись того, что изменилось.</li>
+            <li><b>Ключи живут в менеджере паролей</b>, а не в чатах, комментариях к задачам или документах.</li>
+            <li><b>Уведомления об ошибках</b> на каждом боевом процессе.</li>
+            <li><b>Документация</b>, которую можно передать другому разработчику.</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Системы, которые я связываю чаще всего</h2>
+          <ul class="tools small">
+            <li>Kommo / amoCRM</li><li>Bitrix24</li><li>Shopify</li><li>WhatsApp Cloud API</li><li>Telegram</li><li>Instagram</li><li>Лид-формы TikTok</li><li>Реклама Meta</li><li>ClickUp</li><li>Google Sheets</li><li>Google Calendar</li><li>WordPress</li><li>n8n</li><li>Make</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="faq-h">
+      <h2 id="faq-h">Частые вопросы</h2>
+      <div class="faq">
+        <details><summary>Почему n8n, а не встроенная автоматизация CRM?</summary><p>Встроенная автоматизация хороша внутри одной системы. Когда данные ходят между CRM, магазином, мессенджерами и ClickUp, n8n дает одно место, где весь процесс виден, логируется и легко меняется. Make использую, если он уже есть у клиента.</p></details>
+        <details><summary>Где работает n8n?</summary><p>На сервере, который принадлежит тебе, или в облаке n8n. Для клиентских проектов я предпочитаю отдельный сервер на каждого клиента: твои автоматизации, данные и доступы остаются твоими, а проблема одного клиента никогда не задевает другого.</p></details>
+        <details><summary>Что будет, если интеграция сломается?</summary><p>В процессы встроены уведомления об ошибках, поэтому сбой виден в тот же день, а не через неделю. На сопровождении я сам мониторю и чиню; без него ты получаешь документацию, по которой другой разработчик сможет подхватить работу.</p></details>
+        <details><summary>Можешь работать с тем, что у нас уже есть?</summary><p>Да. Обычно начинаю с того, что читаю существующее — вебхуки, сценарии, воронки — и оставляю то, что работает. Ничего не удаляю без бэкапа и твоего явного согласия.</p></details>
+      </div>
+    </section>
+
+    <section aria-labelledby="related-h">
+      <h2 id="related-h">Связанные работы</h2>
+      <div class="cards">
+        <a class="card" href="/ru/cases/ecommerce-unpaid-order-follow-up/">
+          <span class="tag">Онлайн-торговля, Латинская Америка</span>
+          <h3>Shopify → Kommo → n8n → WhatsApp: каждый неоплаченный заказ получает напоминание, и менеджеру не нужно об этом помнить.</h3>
+          <span class="more">Читать кейс</span>
+        </a>
+        <a class="card" href="/ru/cases/immigration-agency-ai-agents/">
+          <span class="tag">Миграция и гражданство</span>
+          <h3>AI-агенты на открытых линиях Bitrix24 и двухлинейная схема для TikTok в Kommo, распределение лидов, два сайта и автоматизации n8n на сопровождении.</h3>
+          <span class="more">Читать кейс</span>
+        </a>
+        <a class="card" href="/ru/services/managed-services/">
+          <span class="tag">Услуга</span>
+          <h3>Сопровождение</h3>
+<p>Мониторинг, еженедельные улучшения, отчеты и новые автоматизации по мере роста бизнеса.</p>          <span class="more">Подробнее</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="band" aria-labelledby="contact-h">
+      <div class="contact">
+        <div>
+          <h2 id="contact-h">Давай обсудим твои процессы</h2>
+          <p>Запишись на 30-минутный видеозвонок или напиши мне напрямую. Отвечаю в течение рабочего дня.</p>
+        </div>
+        <div class="ctas">
+          <a class="btn btn-primary" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1QaeAtBbRm9E6dCOqYcLi57awQORRnsjI7x1G6maX2-XyD0c8wLhdUrsz5z5yCTS_GYiABaUnU" target="_blank" rel="noopener">Записаться на звонок</a>
+          <a class="btn btn-ghost" href="mailto:petr@smartvisionai.agency">Написать мне</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="foot-grid">
+      <div>
+        <p><b style="color:var(--ink)">Smart Vision AI</b></p>
+        <p>Студия внедрения AI, которую ведет Петр Беляев.<br>Керетаро, Мексика · GMT-6 · русский и английский</p>
+        <p><a href="mailto:petr@smartvisionai.agency">petr@smartvisionai.agency</a></p>
+      </div>
+      <div>
+        <h4>Услуги</h4>
+        <ul><li><a href="/ru/services/ai-sales-agents/">AI-агенты продаж и поддержки</a></li><li><a href="/ru/services/clickup-implementation/">Внедрение ClickUp</a></li><li><a href="/ru/services/crm-messenger-integrations/">Интеграции CRM и мессенджеров</a></li><li><a href="/ru/services/ai-search-visibility/">Видимость в нейросетях</a></li><li><a href="/ru/services/managed-services/">Сопровождение</a></li></ul>
+      </div>
+      <div>
+        <h4>Кейсы</h4>
+        <ul><li><a href="/ru/cases/immigration-agency-ai-agents/">Миграционное агентство</a></li><li><a href="/ru/cases/ecommerce-unpaid-order-follow-up/">Интернет-магазин</a></li><li><a href="/ru/cases/tour-operator-ai-sales-agent/">Туроператор</a></li><li><a href="/ru/cases/barbershop-franchise-clickup-platform/">Франшиза барбершопов</a></li></ul>
+      </div>
+      <div>
+        <h4>Студия</h4>
+        <ul>
+          <li><a href="/ru/clickup-partner/">Партнер ClickUp</a></li>
+          <li><a href="/ru/blog/">Блог</a></li>
+          <li><a href="/ru/contact/">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <p>© 2026 Smart Vision AI · Петр Беляев · Керетаро, Мексика</p>
+    <p>ClickUp — товарный знак Mango Technologies, Inc. Smart Vision AI — независимый сервисный партнер, не связан с ClickUp и не действует от его имени. Остальные названия продуктов — товарные знаки их владельцев.</p>
+  </footer>
+</div>
+</body>
+</html>

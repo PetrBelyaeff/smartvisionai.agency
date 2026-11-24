@@ -1,0 +1,39 @@
+{% extends "service_layout.html" %}
+{% set faq = [
+  ("¿Cómo se cobra el soporte continuo?", "Por hora, con el tiempo registrado por tarea. Recibes un reporte mensual: qué se hizo, cuánto tomó y el total."),
+  ("¿Qué tan rápido reaccionas?", "Las fallas en flujos en producción tienen prioridad sobre el trabajo planeado. Las mejoras se planean cada semana. Los tiempos de respuesta se pueden fijar en el acuerdo."),
+  ("¿Puedo ver en qué estás trabajando?", "Sí. Cada tarea vive en ClickUp con acceso de invitado para ti, y las actualizaciones llegan al chat de tu equipo. Ves la fila de trabajo, el estado y el tiempo invertido."),
+  ("¿Puedo terminar cuando quiera?", "Sí. Te quedas con todo: cuentas, servidores, flujos, documentación. Nada queda atado a mí."),
+] %}
+{% set related = ["/cases/immigration-agency-ai-agents/", "/services/ai-sales-agents/", "/services/crm-messenger-integrations/"] %}
+{% block eyebrow %}Servicio · Soporte continuo{% endblock %}
+{% block h1 %}Soporte continuo: tus agentes y automatizaciones siguen funcionando después del lanzamiento{% endblock %}
+{% block lead %}Los agentes de IA se desajustan, las integraciones fallan cuando un proveedor cambia su API y el negocio sigue cambiando. Me quedo después del lanzamiento para monitorear, corregir y mejorar, con cada hora visible para ti.{% endblock %}
+{% block body %}
+    <section aria-labelledby="what-h">
+      <h2 id="what-h">Qué incluye</h2>
+      <div class="cards three">
+        <div class="card"><h3>Monitoreo</h3><p>Avisos de error en los flujos en producción y revisión periódica de las conversaciones de los agentes.</p></div>
+        <div class="card"><h3>Correcciones</h3><p>Integraciones rotas, respuestas incorrectas y mensajes fallidos van primero.</p></div>
+        <div class="card"><h3>Mejoras semanales</h3><p>Un plan semanal breve: qué voy a cambiar en agentes, CRM y ClickUp, y por qué.</p></div>
+        <div class="card"><h3>Actualización de la base de conocimiento</h3><p>Nuevos precios, servicios y documentos agregados al conocimiento de los agentes, con registro de cada cambio.</p></div>
+        <div class="card"><h3>Nuevas automatizaciones</h3><p>Cuando aparece una rutina manual, se define su alcance y se automatiza.</p></div>
+        <div class="card"><h3>Reporte mensual</h3><p>Reporte en lenguaje sencillo del trabajo hecho y el tiempo invertido, listo para cotejar con las tareas.</p></div>
+      </div>
+    </section>
+
+    <section aria-labelledby="how-h">
+      <div class="split">
+        <div>
+          <h2 id="how-h">Cómo funciona semana a semana</h2>
+          <ol class="steps">
+            <li><b>Solicitudes</b><span>Tu equipo escribe en el chat de trabajo; las solicitudes se vuelven tareas en ClickUp.</span></li>
+            <li><b>Plan semanal</b><span>Prioridades de la semana, acordadas contigo.</span></li>
+            <li><b>Trabajo con registro visible</b><span>Notas de avance y tiempo en cada tarea.</span></li>
+            <li><b>Reporte de fin de mes</b><span>Qué se hizo, tiempo por tarea, total.</span></li>
+          </ol>
+        </div>
+        <div class="note"><b>Por qué una sola persona.</b> Quien construyó tu sistema es quien le da soporte. Sin tickets que rebotan entre departamentos ni volver a explicar el contexto.</div>
+      </div>
+    </section>
+{% endblock %}

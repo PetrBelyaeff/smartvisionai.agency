@@ -1,0 +1,58 @@
+{% extends "service_layout.html" %}
+{% set faq = [
+  ("¿El agente va a reemplazar a mi equipo de ventas?", "No. El agente toma la parte repetitiva del inicio de la conversación —responder, calificar, recordar— y pasa los prospectos calientes a personas. Tus vendedores dedican su tiempo a conversaciones que sí pueden cerrar."),
+  ("¿Y si el agente dice algo incorrecto?", "El agente responde solo con la base de conocimiento que aprobamos juntos y tiene reglas explícitas sobre lo que no puede prometer: precios fuera de lista, plazos, garantías. Las preguntas que no sabe se pasan a una persona en lugar de adivinar. Cada cambio en las instrucciones del agente queda registrado, así que cualquier respuesta se puede rastrear."),
+  ("¿Qué canales de mensajería y CRM soportan?", "WhatsApp, Telegram, Instagram, chat del sitio web y otros canales que la plataforma del agente o tu CRM puedan conectar. Del lado del CRM trabajo sobre todo con Kommo/amoCRM y Bitrix24; otros CRM son posibles con n8n si tienen API."),
+  ("¿En qué idioma habla el agente?", "El agente responde en el idioma en que le escribe el cliente. Construyo y pruebo agentes en inglés, español y ruso."),
+  ("¿Cuánto tarda el lanzamiento?", "Una primera versión funcional para un canal suele tomar algunas semanas, y la mayor parte se va en construir y revisar la base de conocimiento. El plazo exacto va en el alcance por escrito antes de empezar."),
+  ("¿Cuánto cuesta operarlo?", "Hay dos partes: mi trabajo (precio fijo por la construcción y, si lo necesitas, soporte continuo) y los costos de operación que pagas directamente: la plataforma del agente, el uso del modelo de IA y las tarifas de mensajería. Estimo los costos de operación en el alcance para que no haya sorpresas."),
+] %}
+{% set related = ["/cases/tour-operator-ai-sales-agent/", "/cases/immigration-agency-ai-agents/", "/blog/ai-sales-agent-human-handoff/"] %}
+{% block eyebrow %}Servicio · Agentes de IA{% endblock %}
+{% block h1 %}Agentes de IA para ventas y atención que responden a cada prospecto y saben cuándo llamar a una persona{% endblock %}
+{% block lead %}El agente responde en segundos en WhatsApp, Telegram, Instagram o el chat de tu sitio, califica al prospecto, agenda el siguiente paso y registra todo en tu CRM. Cuando la conversación necesita a una persona, la pasa con todo el contexto.{% endblock %}
+{% block body %}
+    <section aria-labelledby="what-h">
+      <div class="split">
+        <div>
+          <h2 id="what-h">Qué hace el agente</h2>
+          <p class="section-lead" style="margin-bottom:0">La meta no es un chatbot que platique. La meta es perder menos prospectos y agendar más llamadas, con tu equipo en control.</p>
+        </div>
+        <ul class="checks">
+          <li><b>Responde 24/7</b> con una base de conocimiento aprobada: servicios, precios, condiciones, documentos, preguntas frecuentes.</li>
+          <li><b>Califica</b> al prospecto con las preguntas que haría tu mejor vendedor y guarda las respuestas en los campos del CRM.</li>
+          <li><b>Avanza el negocio</b>: ofrece una llamada, agenda un horario, envía una presentación o un enlace de pago.</li>
+          <li><b>Da seguimiento</b> cuando el cliente deja de responder, con recordatorios amables en el horario que tú defines.</li>
+          <li><b>Pasa la conversación</b> a un vendedor con disparadores claros, y le dice al cliente qué sigue.</li>
+          <li><b>Registra todo</b> en el CRM, para que el vendedor continúe sin pedirle al cliente que repita.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section aria-labelledby="how-h">
+      <h2 id="how-h">Cómo lo construyo</h2>
+      <p class="section-lead">La mayor parte del trabajo no es la IA, sino la lógica de ventas alrededor.</p>
+      <ol class="steps">
+        <li><b>Mapear la conversación</b><span>De dónde llegan los prospectos, qué preguntan, cómo se ve un prospecto calificado, dónde pierden tiempo hoy tus vendedores.</span></li>
+        <li><b>Construir la base de conocimiento</b><span>Servicios, precios, documentos y objeciones reunidos en una fuente confiable para el agente. La apruebas antes del lanzamiento.</span></li>
+        <li><b>Escribir instrucciones y reglas</b><span>Tono, preguntas de calificación, lo que el agente nunca debe prometer, cuándo escala. Probado con conversaciones reales del pasado.</span></li>
+        <li><b>Conectar canales y CRM</b><span>Mensajería, chat del sitio y Kommo/amoCRM o Bitrix24, con campos, etapas del embudo y avisos a vendedores.</span></li>
+        <li><b>Probar, lanzar, vigilar</b><span>Un periodo de prueba con revisión diaria de conversaciones y luego ajustes. Después del lanzamiento el agente sigue monitoreado.</span></li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="fit-h">
+      <div class="split">
+        <div>
+          <h2 id="fit-h">Te conviene si</h2>
+          <ul class="checks plain">
+            <li>La mayoría de tus prospectos llegan por mensajería o por el chat del sitio.</li>
+            <li>Tus vendedores responden las mismas preguntas todos los días.</li>
+            <li>Los prospectos que escriben de noche o en fin de semana se enfrían.</li>
+            <li>Tienes un CRM, o estás listo para implementarlo.</li>
+          </ul>
+        </div>
+        <div class="note"><b>Límites honestos.</b> Un agente no arregla una oferta poco clara ni un proceso de ventas que nadie sigue. Si veo que el cuello de botella está en otro lado —precios, sitio web, forma de trabajar del equipo— te lo diré en la primera llamada.</div>
+      </div>
+    </section>
+{% endblock %}

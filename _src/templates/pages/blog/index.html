@@ -9,7 +9,7 @@
     <section aria-label="Posts" style="border-top:0;padding-top:0">
       <div class="posts">
         {% for p in posts %}
-        <a class="post-card" href="{{ link(p.url) }}">
+        <a class="post-card" href="{{ link(p.en_url) }}">
           <div class="meta"><time datetime="{{ p.date }}">{{ p.date_label if p.get('date_label') else p.date }}</time><span>{{ p.read }}</span></div>
           <h2>{{ p.nav }}</h2>
           <p>{{ p.summary }}</p>

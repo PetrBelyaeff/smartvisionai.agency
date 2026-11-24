@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="hero">
+      <div>
+        <span class="eyebrow">Estudio de implementación de IA</span>
+        <h1>Creamos agentes de IA para ventas y sistemas en ClickUp que convierten prospectos en citas agendadas.</h1>
+        <p class="lead">Para pequeñas y medianas empresas de servicios que venden por mensajería y CRM, y que se ahogan en seguimientos manuales.</p>
+        <div class="ctas">
+          <a class="btn btn-primary" href="{{ site.booking }}" target="_blank" rel="noopener">{{ t('book') }}</a>
+          <a class="btn btn-ghost" href="mailto:{{ site.email }}">{{ site.email }}</a>
+        </div>
+        <ul class="facts">
+          <li>Querétaro, México (GMT-6)</li>
+          <li>Llamadas en inglés y ruso</li>
+          <li>Trabajo con ClickUp desde 2023</li>
+        </ul>
+      </div>
+      <figure class="portrait">
+        <img src="{{ asset('/petr-belyaev-4x5-v2-660.jpg') }}" srcset="{{ asset('/petr-belyaev-4x5-v2-660.jpg') }} 660w, {{ asset('/petr-belyaev-4x5-v2.jpg') }} 1200w" sizes="330px" alt="Petr Belyaev, fundador de Smart Vision AI" width="330" height="412">
+        <figcaption><b>Petr Belyaev</b>Fundador, Smart Vision AI<br>ClickUp Verified Service Partner</figcaption>
+      </figure>
+    </div>
+
+    <section aria-labelledby="outcomes-h">
+      <h2 id="outcomes-h">Qué cambia en tu negocio</h2>
+      <p class="section-lead">Una sola persona se encarga de todo: desde la primera llamada hasta el soporte después del lanzamiento.</p>
+      <div class="outcomes">
+        <div class="outcome"><div class="n">01</div><p>La atención de prospectos y los seguimientos funcionan solos</p></div>
+        <div class="outcome"><div class="n">02</div><p>Los proyectos y la operación con clientes viven en un solo lugar</p></div>
+        <div class="outcome"><div class="n">03</div><p>CRM, mensajería y agentes de IA trabajan como un solo flujo</p></div>
+      </div>
+    </section>
+
+    <section id="services" aria-labelledby="services-h">
+      <h2 id="services-h">Servicios</h2>
+      <p class="section-lead">Proyectos de implementación y soporte continuo. Cada servicio tiene su página con alcance, proceso y respuestas a preguntas frecuentes.</p>
+      <div class="cards">
+        {% for s in services %}
+        <a class="card" href="{{ link(s.en_url) }}">
+          <h3>{{ s.nav }}{% if s.en_url == '/services/ai-search-visibility/' %}<span class="badge">{{ t('new') }}</span>{% endif %}</h3>
+          <p>{{ s.summary }}</p>
+          <span class="more">{{ t('learn_more') }}</span>
+        </a>
+        {% endfor %}
+        <a class="card" href="{{ link('/clickup-partner/') }}">
+          <span class="tag">ClickUp Verified Service Partner</span>
+          <h3>Planes de ClickUp e implementación con un partner</h3>
+          <p>Auditoría de tu espacio de trabajo actual, migración desde otras herramientas y planes de pago de ClickUp con acompañamiento en la implementación.</p>
+          <span class="more">Sobre la alianza</span>
+        </a>
+      </div>
+    </section>
+
+    <section aria-labelledby="cases-h">
+      <h2 id="cases-h">Trabajo reciente</h2>
+      <p class="section-lead">Lo que construyo y opero para clientes. No publico sus nombres: la industria y la solución cuentan la historia.</p>
+      <div class="cards">
+        {% for c in cases %}
+        <a class="card" href="{{ link(c.en_url) }}">
+          <span class="tag">{{ c.industry }}</span>
+          <h3>{{ c.summary }}</h3>
+          <span class="more">{{ t('read_case') }}</span>
+        </a>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section id="approach" aria-labelledby="approach-h">
+      <div class="about">
+        <div>
+          <h2 id="approach-h">Sobre Smart Vision AI</h2>
+          <p>Smart Vision AI es un estudio de implementación de IA de una sola persona, dirigido por Petr Belyaev. Trabajo con pequeñas y medianas empresas de servicios que venden por mensajería y CRM.</p>
+          <p>Diseño espacios de trabajo en ClickUp para la operación y la atención a clientes, construyo agentes de IA para ventas y atención, y los conecto con tu CRM y tus canales de mensajería. Después del lanzamiento sigo contigo como tu partner de soporte.</p>
+          <p>Trabajas directamente conmigo: sin ejecutivos de cuenta ni intermediarios.</p>
+        </div>
+        <ol class="steps">
+          <li><b>Llamada inicial</b><span>30 minutos para entender tu proceso de ventas y ver dónde la automatización sí paga.</span></li>
+          <li><b>Alcance por escrito</b><span>Qué se va a construir, cómo se conecta y qué recibes: acordado antes de empezar.</span></li>
+          <li><b>Construcción y lanzamiento</b><span>ClickUp, agentes e integraciones configurados, probados y entregados con instrucciones claras.</span></li>
+          <li><b>Soporte y crecimiento</b><span>Monitoreo, mejoras y nuevas automatizaciones de forma continua.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section aria-labelledby="tools-h">
+      <h2 id="tools-h">Herramientas e integraciones</h2>
+      <p class="section-lead">Con lo que trabajo todos los días.</p>
+      <ul class="tools">
+        <li>ClickUp</li><li>n8n</li><li>Make</li><li>Kommo / amoCRM</li><li>Bitrix24</li><li>Shopify</li><li>Telegram</li><li>WhatsApp</li><li>Google Workspace</li><li>Agentes de IA en Suvvy</li><li>ChatGPT, Claude, Perplexity</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="blog-h">
+      <h2 id="blog-h">Del blog</h2>
+      <p class="section-lead">Notas desde el trabajo práctico con clientes.</p>
+      <div class="cards">
+        {% for p in posts %}
+        <a class="card" href="{{ link(p.en_url) }}">
+          <span class="tag">{{ p.read }}</span>
+          <h3>{{ p.nav }}</h3>
+          <p>{{ p.summary }}</p>
+          <span class="more">{{ t('read') }}</span>
+        </a>
+        {% endfor %}
+      </div>
+    </section>
+{% endblock %}

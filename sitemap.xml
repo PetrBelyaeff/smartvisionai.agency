@@ -1,20 +1,309 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://smartvisionai.agency/</loc><lastmod>2026-11-24</lastmod></url>
-  <url><loc>https://smartvisionai.agency/services/</loc><lastmod>2026-11-24</lastmod></url>
-  <url><loc>https://smartvisionai.agency/services/ai-sales-agents/</loc><lastmod>2026-11-24</lastmod></url>
-  <url><loc>https://smartvisionai.agency/services/clickup-implementation/</loc><lastmod>2026-11-24</lastmod></url>
-  <url><loc>https://smartvisionai.agency/services/crm-messenger-integrations/</loc><lastmod>2026-11-24</lastmod></url>
-  <url><loc>https://smartvisionai.agency/services/ai-search-visibility/</loc><lastmod>2026-11-24</lastmod></url>
-  <url><loc>https://smartvisionai.agency/services/managed-services/</loc><lastmod>2026-11-24</lastmod></url>
-  <url><loc>https://smartvisionai.agency/clickup-partner/</loc><lastmod>2026-11-24</lastmod></url>
-  <url><loc>https://smartvisionai.agency/cases/</loc><lastmod>2026-11-24</lastmod></url>
-  <url><loc>https://smartvisionai.agency/cases/immigration-agency-ai-agents/</loc><lastmod>2026-11-24</lastmod></url>
-  <url><loc>https://smartvisionai.agency/cases/ecommerce-unpaid-order-follow-up/</loc><lastmod>2026-11-24</lastmod></url>
-  <url><loc>https://smartvisionai.agency/cases/tour-operator-ai-sales-agent/</loc><lastmod>2026-11-24</lastmod></url>
-  <url><loc>https://smartvisionai.agency/cases/barbershop-franchise-clickup-platform/</loc><lastmod>2026-11-24</lastmod></url>
-  <url><loc>https://smartvisionai.agency/blog/</loc><lastmod>2026-11-24</lastmod></url>
-  <url><loc>https://smartvisionai.agency/blog/is-your-business-visible-in-chatgpt/</loc><lastmod>2026-11-24</lastmod></url>
-  <url><loc>https://smartvisionai.agency/blog/ai-sales-agent-human-handoff/</loc><lastmod>2026-11-24</lastmod></url>
-  <url><loc>https://smartvisionai.agency/contact/</loc><lastmod>2026-11-24</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://smartvisionai.agency/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/services/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/services/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/services/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/services/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/services/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/services/ai-sales-agents/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/services/ai-sales-agents/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/services/ai-sales-agents/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/services/ai-sales-agents/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/services/ai-sales-agents/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/services/clickup-implementation/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/services/clickup-implementation/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/services/clickup-implementation/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/services/clickup-implementation/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/services/clickup-implementation/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/services/crm-messenger-integrations/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/services/crm-messenger-integrations/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/services/crm-messenger-integrations/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/services/crm-messenger-integrations/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/services/crm-messenger-integrations/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/services/ai-search-visibility/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/services/ai-search-visibility/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/services/ai-search-visibility/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/services/ai-search-visibility/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/services/ai-search-visibility/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/services/managed-services/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/services/managed-services/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/services/managed-services/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/services/managed-services/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/services/managed-services/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/clickup-partner/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/clickup-partner/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/clickup-partner/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/clickup-partner/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/clickup-partner/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/cases/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/cases/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/cases/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/cases/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/cases/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/cases/immigration-agency-ai-agents/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/cases/immigration-agency-ai-agents/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/cases/immigration-agency-ai-agents/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/cases/immigration-agency-ai-agents/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/cases/immigration-agency-ai-agents/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/cases/ecommerce-unpaid-order-follow-up/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/cases/ecommerce-unpaid-order-follow-up/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/cases/ecommerce-unpaid-order-follow-up/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/cases/ecommerce-unpaid-order-follow-up/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/cases/ecommerce-unpaid-order-follow-up/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/cases/tour-operator-ai-sales-agent/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/cases/tour-operator-ai-sales-agent/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/cases/tour-operator-ai-sales-agent/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/cases/tour-operator-ai-sales-agent/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/cases/tour-operator-ai-sales-agent/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/cases/barbershop-franchise-clickup-platform/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/cases/barbershop-franchise-clickup-platform/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/cases/barbershop-franchise-clickup-platform/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/cases/barbershop-franchise-clickup-platform/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/cases/barbershop-franchise-clickup-platform/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/blog/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/blog/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/blog/is-your-business-visible-in-chatgpt/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/blog/is-your-business-visible-in-chatgpt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/blog/is-your-business-visible-in-chatgpt/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/blog/is-your-business-visible-in-chatgpt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/blog/is-your-business-visible-in-chatgpt/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/blog/ai-sales-agent-human-handoff/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/blog/ai-sales-agent-human-handoff/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/blog/ai-sales-agent-human-handoff/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/blog/ai-sales-agent-human-handoff/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/blog/ai-sales-agent-human-handoff/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/contact/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/contact/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/contact/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/contact/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/es/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/es/services/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/services/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/services/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/services/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/services/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/es/services/ai-sales-agents/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/services/ai-sales-agents/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/services/ai-sales-agents/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/services/ai-sales-agents/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/services/ai-sales-agents/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/es/services/clickup-implementation/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/services/clickup-implementation/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/services/clickup-implementation/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/services/clickup-implementation/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/services/clickup-implementation/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/es/services/crm-messenger-integrations/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/services/crm-messenger-integrations/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/services/crm-messenger-integrations/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/services/crm-messenger-integrations/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/services/crm-messenger-integrations/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/es/services/ai-search-visibility/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/services/ai-search-visibility/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/services/ai-search-visibility/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/services/ai-search-visibility/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/services/ai-search-visibility/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/es/services/managed-services/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/services/managed-services/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/services/managed-services/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/services/managed-services/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/services/managed-services/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/es/clickup-partner/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/clickup-partner/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/clickup-partner/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/clickup-partner/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/clickup-partner/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/es/cases/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/cases/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/cases/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/cases/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/cases/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/es/cases/immigration-agency-ai-agents/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/cases/immigration-agency-ai-agents/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/cases/immigration-agency-ai-agents/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/cases/immigration-agency-ai-agents/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/cases/immigration-agency-ai-agents/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/es/cases/ecommerce-unpaid-order-follow-up/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/cases/ecommerce-unpaid-order-follow-up/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/cases/ecommerce-unpaid-order-follow-up/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/cases/ecommerce-unpaid-order-follow-up/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/cases/ecommerce-unpaid-order-follow-up/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/es/cases/tour-operator-ai-sales-agent/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/cases/tour-operator-ai-sales-agent/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/cases/tour-operator-ai-sales-agent/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/cases/tour-operator-ai-sales-agent/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/cases/tour-operator-ai-sales-agent/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/es/cases/barbershop-franchise-clickup-platform/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/cases/barbershop-franchise-clickup-platform/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/cases/barbershop-franchise-clickup-platform/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/cases/barbershop-franchise-clickup-platform/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/cases/barbershop-franchise-clickup-platform/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/es/blog/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/blog/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/es/blog/is-your-business-visible-in-chatgpt/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/blog/is-your-business-visible-in-chatgpt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/blog/is-your-business-visible-in-chatgpt/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/blog/is-your-business-visible-in-chatgpt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/blog/is-your-business-visible-in-chatgpt/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/es/blog/ai-sales-agent-human-handoff/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/blog/ai-sales-agent-human-handoff/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/blog/ai-sales-agent-human-handoff/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/blog/ai-sales-agent-human-handoff/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/blog/ai-sales-agent-human-handoff/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/es/contact/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/contact/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/contact/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/contact/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/ru/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/ru/services/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/services/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/services/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/services/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/services/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/ru/services/ai-sales-agents/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/services/ai-sales-agents/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/services/ai-sales-agents/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/services/ai-sales-agents/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/services/ai-sales-agents/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/ru/services/clickup-implementation/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/services/clickup-implementation/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/services/clickup-implementation/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/services/clickup-implementation/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/services/clickup-implementation/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/ru/services/crm-messenger-integrations/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/services/crm-messenger-integrations/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/services/crm-messenger-integrations/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/services/crm-messenger-integrations/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/services/crm-messenger-integrations/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/ru/services/ai-search-visibility/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/services/ai-search-visibility/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/services/ai-search-visibility/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/services/ai-search-visibility/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/services/ai-search-visibility/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/ru/services/managed-services/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/services/managed-services/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/services/managed-services/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/services/managed-services/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/services/managed-services/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/ru/clickup-partner/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/clickup-partner/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/clickup-partner/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/clickup-partner/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/clickup-partner/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/ru/cases/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/cases/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/cases/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/cases/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/cases/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/ru/cases/immigration-agency-ai-agents/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/cases/immigration-agency-ai-agents/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/cases/immigration-agency-ai-agents/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/cases/immigration-agency-ai-agents/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/cases/immigration-agency-ai-agents/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/ru/cases/ecommerce-unpaid-order-follow-up/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/cases/ecommerce-unpaid-order-follow-up/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/cases/ecommerce-unpaid-order-follow-up/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/cases/ecommerce-unpaid-order-follow-up/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/cases/ecommerce-unpaid-order-follow-up/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/ru/cases/tour-operator-ai-sales-agent/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/cases/tour-operator-ai-sales-agent/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/cases/tour-operator-ai-sales-agent/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/cases/tour-operator-ai-sales-agent/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/cases/tour-operator-ai-sales-agent/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/ru/cases/barbershop-franchise-clickup-platform/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/cases/barbershop-franchise-clickup-platform/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/cases/barbershop-franchise-clickup-platform/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/cases/barbershop-franchise-clickup-platform/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/cases/barbershop-franchise-clickup-platform/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/ru/blog/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/blog/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/ru/blog/is-your-business-visible-in-chatgpt/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/blog/is-your-business-visible-in-chatgpt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/blog/is-your-business-visible-in-chatgpt/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/blog/is-your-business-visible-in-chatgpt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/blog/is-your-business-visible-in-chatgpt/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/ru/blog/ai-sales-agent-human-handoff/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/blog/ai-sales-agent-human-handoff/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/blog/ai-sales-agent-human-handoff/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/blog/ai-sales-agent-human-handoff/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/blog/ai-sales-agent-human-handoff/"/>
+  </url>
+  <url><loc>https://smartvisionai.agency/ru/contact/</loc><lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartvisionai.agency/contact/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smartvisionai.agency/es/contact/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://smartvisionai.agency/ru/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartvisionai.agency/contact/"/>
+  </url>
 </urlset>

@@ -10,8 +10,8 @@
       <h2 id="list-h" class="visually-hidden" style="position:absolute;left:-9999px">All services</h2>
       <div class="cards">
         {% for s in services %}
-        <a class="card" href="{{ link(s.url) }}">
-          <h3>{{ s.nav }}{% if s.url == '/services/ai-search-visibility/' %}<span class="badge">New</span>{% endif %}</h3>
+        <a class="card" href="{{ link(s.en_url) }}">
+          <h3>{{ s.nav }}{% if s.en_url == '/services/ai-search-visibility/' %}<span class="badge">{{ t('new') }}</span>{% endif %}</h3>
           <p>{{ s.summary }}</p>
           <span class="more">Learn more</span>
         </a>

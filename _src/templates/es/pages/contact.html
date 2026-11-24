@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="page-hero">
+      <span class="eyebrow">Contacto</span>
+      <h1>Hablemos de tus procesos</h1>
+      <p class="lead">Lo más rápido es una videollamada de 30 minutos: me cuentas cómo se mueven hoy los prospectos y el trabajo con clientes, y te digo con honestidad qué vale la pena automatizar y qué no.</p>
+      <div class="ctas" style="margin-bottom:0">
+        <a class="btn btn-primary" href="{{ site.booking }}" target="_blank" rel="noopener">{{ t('book') }}</a>
+        <a class="btn btn-ghost" href="mailto:{{ site.email }}">{{ site.email }}</a>
+      </div>
+    </div>
+
+    <section aria-labelledby="prep-h">
+      <div class="split">
+        <div>
+          <h2 id="prep-h">Conviene tener a la mano antes de la llamada</h2>
+          <ul class="checks plain">
+            <li>De dónde llegan tus prospectos y cuántos son al mes, más o menos.</li>
+            <li>Qué CRM, canales de mensajería y herramientas de tareas usas.</li>
+            <li>Qué le quita hoy más tiempo manual a tu equipo.</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Datos</h2>
+          <ul class="checks plain">
+            <li>Correo: <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            <li>En Querétaro, México · GMT-6</li>
+            <li>Llamadas en inglés o ruso</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+{% endblock %}
+{% block contact %}{% endblock %}

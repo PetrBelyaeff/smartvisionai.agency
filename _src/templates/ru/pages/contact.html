@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="page-hero">
+      <span class="eyebrow">Контакты</span>
+      <h1>Давай обсудим твои процессы</h1>
+      <p class="lead">Быстрее всего — видеозвонок на 30 минут: ты рассказываешь, как сейчас движутся лиды и работа с клиентами, а я честно говорю, что стоит автоматизировать, а что нет.</p>
+      <div class="ctas" style="margin-bottom:0">
+        <a class="btn btn-primary" href="{{ site.booking }}" target="_blank" rel="noopener">{{ t('book') }}</a>
+        <a class="btn btn-ghost" href="mailto:{{ site.email }}">{{ site.email }}</a>
+      </div>
+    </div>
+
+    <section aria-labelledby="prep-h">
+      <div class="split">
+        <div>
+          <h2 id="prep-h">Что полезно подготовить к звонку</h2>
+          <ul class="checks plain">
+            <li>Откуда приходят лиды и примерно сколько их в месяц.</li>
+            <li>Какие CRM, мессенджеры и таск-трекеры ты используешь.</li>
+            <li>Что сейчас отнимает у команды больше всего ручного времени.</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Контакты</h2>
+          <ul class="checks plain">
+            <li>Почта: <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            <li>Керетаро, Мексика · GMT-6</li>
+            <li>Звонки на русском или английском</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+{% endblock %}
+{% block contact %}{% endblock %}

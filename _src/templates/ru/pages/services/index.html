@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="page-hero">
+      <span class="eyebrow">Услуги</span>
+      <h1>Проекты внедрения и сопровождение</h1>
+      <p class="lead">Я собираю систему, которая доводит лид до назначенного звонка и держит в порядке работу с клиентами, — а потом поддерживаю ее. Можно взять одну услугу или несколько.</p>
+    </div>
+
+    <section aria-labelledby="list-h" style="border-top:0;padding-top:0">
+      <h2 id="list-h" style="position:absolute;left:-9999px">Все услуги</h2>
+      <div class="cards">
+        {% for s in services %}
+        <a class="card" href="{{ link(s.en_url) }}">
+          <h3>{{ s.nav }}{% if s.en_url == '/services/ai-search-visibility/' %}<span class="badge">{{ t('new') }}</span>{% endif %}</h3>
+          <p>{{ s.summary }}</p>
+          <span class="more">{{ t('learn_more') }}</span>
+        </a>
+        {% endfor %}
+        <a class="card" href="{{ link('/clickup-partner/') }}">
+          <span class="tag">{{ t('partner_tag') }}</span>
+          <h3>ClickUp Verified Service Partner</h3>
+          <p>Аудит пространства, переезд, обучение и платные тарифы ClickUp через партнера.</p>
+          <span class="more">О партнерстве</span>
+        </a>
+      </div>
+    </section>
+
+    <section aria-labelledby="how-h">
+      <div class="about">
+        <div>
+          <h2 id="how-h">С чего начинается каждый проект</h2>
+          <p>Со звонка на 30 минут и письменного ТЗ. В нем написано, что будет сделано, как это связано с твоими инструментами, сколько стоит, какие расходы на сервисы ты оплачиваешь напрямую и как мы поймем, что все работает.</p>
+          <p>Я не начинаю работу, пока ты не согласовал ТЗ. Это защищает нас обоих от «я думал, что оно еще и…».</p>
+        </div>
+        <ol class="steps">
+          <li><b>Знакомство</b><span>Твой процесс продаж, твои инструменты, где теряются время и лиды.</span></li>
+          <li><b>Письменное ТЗ</b><span>Результаты, сроки, цена и критерии приемки.</span></li>
+          <li><b>Сборка и запуск</b><span>Настроено, проверено на реальных случаях и передано с инструкциями.</span></li>
+          <li><b>Поддержка и развитие</b><span>Сопровождение, если хочешь, чтобы я остался.</span></li>
+        </ol>
+      </div>
+    </section>
+{% endblock %}

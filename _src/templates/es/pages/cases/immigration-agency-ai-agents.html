@@ -1,0 +1,30 @@
+{% extends "case_layout.html" %}
+{% set services_used = ["/services/ai-sales-agents/", "/services/crm-messenger-integrations/", "/services/managed-services/"] %}
+{% block h1 %}Agentes de IA y un flujo de prospectos que no pierde a nadie: una agencia de residencia y ciudadanía{% endblock %}
+{% block lead %}Los prospectos llegan por anuncios, formularios web, TikTok y mensajería, en ruso e inglés, a cualquier hora. Opero los agentes de IA, la parte del CRM y las automatizaciones que llevan cada prospecto al asesor correcto.{% endblock %}
+{% block situation %}
+          <p>La agencia vende programas de residencia y ciudadanía en varios países. Un comprador típico hace muchas preguntas antes de la primera llamada: requisitos, plazos, costos, documentos.</p>
+          <p>Los prospectos llegan por muchos canales a la vez: formularios en dos sitios, redes sociales pagadas, TikTok, WhatsApp y otros servicios de mensajería. Los asesores respondían las mismas preguntas una y otra vez, y quienes escribían de noche esperaban hasta la mañana.</p>
+{% endblock %}
+{% block built %}
+          <ul class="checks">
+            <li><b>Agente de IA principal</b> en los canales del CRM: responde con una base de conocimiento de programas y presentaciones por país, califica y ofrece una consulta.</li>
+            <li><b>Esquema de dos líneas para los prospectos de TikTok</b> en un CRM aparte: un agente de primera línea responde rápido y filtra, uno de segunda línea profundiza con los prospectos calificados.</li>
+            <li><b>Distribución de prospectos</b> entre asesores, incluida la reasignación temporal cuando alguien está de vacaciones.</li>
+            <li><b>Protección de formularios</b> en ambos sitios: los números de teléfono que no pueden existir se rechazan en el formulario, antes de convertirse en prospectos falsos.</li>
+            <li><b>Automatizaciones en n8n</b> entre sitios, CRM y mensajería, con avisos de falla.</li>
+          </ul>
+{% endblock %}
+{% block extra %}
+    <section aria-labelledby="lessons-h">
+      <h2 id="lessons-h">Lo que me enseñó este proyecto</h2>
+      <div class="cards three">
+        <div class="card"><h3>Las fallas silenciosas son las más caras</h3><p>Un paso que se agota por tiempo pero reporta éxito se ve bien durante semanas. Hoy cada flujo en producción tiene avisos sobre el resultado real, no sobre «solicitud enviada».</p></div>
+        <div class="card"><h3>Los agentes necesitan bitácora de cambios</h3><p>Cada cambio en las instrucciones o en la base de conocimiento de un agente queda registrado, así que cualquier respuesta extraña se rastrea hasta un cambio concreto.</p></div>
+        <div class="card"><h3>Un ajuste, ambos sitios</h3><p>Cuando un negocio tiene dos sitios, cada cambio se aplica y se verifica en los dos. Los ajustes a medias generan los errores más raros.</p></div>
+      </div>
+    </section>
+{% endblock %}
+{% block status %}
+          <p>La agencia tiene soporte continuo: monitoreo los agentes y los flujos, actualizo la base de conocimiento cuando cambian los programas y agrego automatizaciones cuando aparecen nuevos canales. El trabajo se registra por tarea y se reporta cada mes.</p>
+{% endblock %}

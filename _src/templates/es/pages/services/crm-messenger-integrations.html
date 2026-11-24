@@ -1,0 +1,46 @@
+{% extends "service_layout.html" %}
+{% set faq = [
+  ("¿Por qué n8n y no solo la automatización del CRM?", "La automatización integrada funciona bien dentro de un sistema. Cuando los datos tienen que moverse entre CRM, tienda, mensajería y ClickUp, n8n da un solo lugar donde todo el flujo es visible, queda registrado y es fácil de cambiar. Uso Make cuando el cliente ya lo tiene."),
+  ("¿Dónde corre n8n?", "En un servidor que es tuyo, o en la nube de n8n. Para proyectos de clientes prefiero un servidor separado por cliente: tus automatizaciones, datos y accesos siguen siendo tuyos, y el problema de un cliente nunca toca a otro."),
+  ("¿Qué pasa cuando una integración falla?", "Los flujos se construyen con avisos de error, así que una falla se ve el mismo día y no una semana después. Con el soporte continuo yo los monitoreo y corrijo; sin él, recibes documentación suficiente para que otro desarrollador los retome."),
+  ("¿Puedes trabajar con lo que ya tenemos?", "Sí. Normalmente empiezo leyendo lo que ya existe —webhooks, escenarios, embudos— y conservo lo que funciona. No se borra nada sin respaldo y sin tu aprobación explícita."),
+] %}
+{% set related = ["/cases/ecommerce-unpaid-order-follow-up/", "/cases/immigration-agency-ai-agents/", "/services/managed-services/"] %}
+{% block eyebrow %}Servicio · Integraciones{% endblock %}
+{% block h1 %}Integraciones de CRM y mensajería para que tus herramientas trabajen como una sola{% endblock %}
+{% block lead %}Kommo/amoCRM, Bitrix24, Shopify, WhatsApp, Telegram, Google Workspace y ClickUp conectados con n8n, para que prospectos, pedidos y tareas se muevan entre ellos sin copiar y pegar.{% endblock %}
+{% block body %}
+    <section aria-labelledby="what-h">
+      <h2 id="what-h">Flujos que construyo con frecuencia</h2>
+      <p class="section-lead">Cada uno reemplaza una rutina manual que alguien de tu equipo hace todos los días, o que se le olvida hacer.</p>
+      <div class="cards three">
+        <div class="card"><h3>Distribución de prospectos</h3><p>Los prospectos de anuncios, formularios web, TikTok y mensajería llegan al embudo correcto y al vendedor correcto, sin duplicados ni spam.</p></div>
+        <div class="card"><h3>Seguimiento de pedidos</h3><p>Pedidos no pagados, carritos abandonados y pagos fallidos disparan un mensaje de WhatsApp y una tarea en el CRM.</p></div>
+        <div class="card"><h3>CRM ↔ ClickUp</h3><p>Un negocio cerrado crea un proyecto en ClickUp; el estado de la entrega regresa a la tarjeta del CRM.</p></div>
+        <div class="card"><h3>Avisos al equipo</h3><p>Alertas en Telegram de nuevos prospectos, tareas vencidas y fallas: solo las que alguien atiende.</p></div>
+        <div class="card"><h3>Actualizaciones al cliente</h3><p>Los comentarios en las tareas del cliente llegan a su chat, sin depender de que alguien se acuerde de enviarlos.</p></div>
+        <div class="card"><h3>Reportes</h3><p>Datos de CRM, ClickUp y hojas de cálculo reunidos en reportes periódicos para el dueño.</p></div>
+      </div>
+    </section>
+
+    <section aria-labelledby="how-h">
+      <div class="split">
+        <div>
+          <h2 id="how-h">Cómo trabajo con integraciones</h2>
+          <ul class="checks">
+            <li><b>Leer antes de cambiar</b>: primero hago inventario de webhooks, escenarios y embudos existentes.</li>
+            <li><b>Respaldo antes de cada cambio</b> en un flujo en producción, y registro escrito de lo que cambió.</li>
+            <li><b>Las claves viven en un gestor de contraseñas</b>, nunca en chats, comentarios de tareas o documentos.</li>
+            <li><b>Avisos de error</b> en cada flujo en producción.</li>
+            <li><b>Documentación</b> que puedes entregar a otro desarrollador.</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Sistemas que conecto con más frecuencia</h2>
+          <ul class="tools small">
+            <li>Kommo / amoCRM</li><li>Bitrix24</li><li>Shopify</li><li>WhatsApp Cloud API</li><li>Telegram</li><li>Instagram</li><li>Formularios de TikTok</li><li>Anuncios de Meta</li><li>ClickUp</li><li>Google Sheets</li><li>Google Calendar</li><li>WordPress</li><li>n8n</li><li>Make</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+{% endblock %}

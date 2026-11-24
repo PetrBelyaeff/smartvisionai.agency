@@ -5,6 +5,7 @@
   "@context": "https://schema.org",
   "@type": "Service",
   "name": page.nav,
+  "inLanguage": lang,
   "description": page.description,
   "url": site.url + page.url,
   "provider": {"@id": site.url + "/#org"},
@@ -19,12 +20,12 @@
 {% endblock %}
 {% block content %}
     <div class="page-hero">
-      <span class="eyebrow">{% block eyebrow %}Service{% endblock %}</span>
+      <span class="eyebrow">{% block eyebrow %}{{ t('service') }}{% endblock %}</span>
       <h1>{% block h1 %}{% endblock %}</h1>
       <p class="lead">{% block lead %}{% endblock %}</p>
       <div class="ctas" style="margin-bottom:0">
-        <a class="btn btn-primary" href="{{ site.booking }}" target="_blank" rel="noopener">Book a call</a>
-        <a class="btn btn-ghost" href="mailto:{{ site.email }}">Email me</a>
+        <a class="btn btn-primary" href="{{ site.booking }}" target="_blank" rel="noopener">{{ t('book') }}</a>
+        <a class="btn btn-ghost" href="mailto:{{ site.email }}">{{ t('email_me') }}</a>
       </div>
     </div>
 
@@ -32,7 +33,7 @@
 
     {% if faq %}
     <section aria-labelledby="faq-h">
-      <h2 id="faq-h">Questions clients ask</h2>
+      <h2 id="faq-h">{{ t('faq_title') }}</h2>
       <div class="faq">
         {% for q, a in faq %}
         <details><summary>{{ q }}</summary><p>{{ a }}</p></details>
@@ -43,14 +44,14 @@
 
     {% if related %}
     <section aria-labelledby="related-h">
-      <h2 id="related-h">Related work</h2>
+      <h2 id="related-h">{{ t('related_title') }}</h2>
       <div class="cards">
         {% for url in related %}{% set r = page_by_url[url] %}
-        <a class="card" href="{{ link(r.url) }}">
-          <span class="tag">{{ r.get('industry', 'Service') if r.kind == 'case' else ('Blog' if r.kind == 'post' else 'Service') }}</span>
+        <a class="card" href="{{ link(r.en_url) }}">
+          <span class="tag">{{ r.get('industry') if r.kind == 'case' else (t('tag_blog') if r.kind == 'post' else t('service')) }}</span>
           <h3>{{ r.summary if r.kind == 'case' else r.nav }}</h3>
           {% if r.kind != 'case' %}<p>{{ r.summary }}</p>{% endif %}
-          <span class="more">{{ 'Read the case' if r.kind == 'case' else 'Read' if r.kind == 'post' else 'Learn more' }}</span>
+          <span class="more">{{ t('read_case') if r.kind == 'case' else t('read') if r.kind == 'post' else t('learn_more') }}</span>
         </a>
         {% endfor %}
       </div>

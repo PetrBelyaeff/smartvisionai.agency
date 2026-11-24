@@ -1,0 +1,18 @@
+{% extends "case_layout.html" %}
+{% set services_used = ["/services/crm-messenger-integrations/", "/services/ai-sales-agents/", "/services/managed-services/"] %}
+{% block h1 %}Cada pedido no pagado recibe seguimiento: una tienda en línea en Latinoamérica{% endblock %}
+{% block lead %}Una tienda en línea que vende en Latinoamérica perdía dinero en pedidos que se hacían pero nunca se pagaban. Conecté la tienda, el CRM y WhatsApp para que el seguimiento llegue a tiempo, siempre.{% endblock %}
+{% block situation %}
+          <p>Los compradores hacen un pedido y no terminan el pago: la tarjeta falla, se distraen, quieren preguntar algo primero. Cada uno de esos pedidos es un comprador interesado, pero recordarles dependía de que alguien tuviera tiempo de hacerlo a mano.</p>
+          <p>En la región, los compradores esperan hablar por WhatsApp, no por correo.</p>
+{% endblock %}
+{% block built %}
+          <ul class="checks">
+            <li><b>Shopify → Kommo</b>: los pedidos nuevos y no pagados se vuelven negocios en el embudo del CRM con todos los datos del pedido.</li>
+            <li><b>Flujo de seguimiento en n8n</b>: según un horario, los pedidos no pagados disparan un mensaje de WhatsApp desde el número de negocio de la tienda, mediante la API oficial de WhatsApp Cloud.</li>
+            <li><b>Agente de IA</b> para responder las preguntas del comprador en la conversación que sigue.</li>
+          </ul>
+{% endblock %}
+{% block status %}
+          <p>El flujo funciona en producción sobre un n8n propio. La tienda tiene soporte continuo: monitoreo el flujo, ajusto los horarios y textos de los mensajes y amplío la automatización cuando la tienda suma canales.</p>
+{% endblock %}

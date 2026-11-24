@@ -17,6 +17,12 @@ header.top{display:flex;align-items:center;justify-content:space-between;padding
 .nav a:hover,.nav a[aria-current="page"]{color:var(--ink)}
 .nav a[aria-current="page"]{font-weight:600}
 .nav .btn{color:var(--accent-ink);padding:10px 16px;font-size:15px}
+.langs{display:inline-flex;gap:2px;font-size:13px;font-weight:600;border:1px solid var(--line);border-radius:999px;padding:3px;background:var(--paper)}
+.langs a,.langs b{padding:4px 9px;border-radius:999px;text-decoration:none;color:var(--muted);font-size:13px}
+.langs b{background:var(--soft);color:var(--accent)}
+.langs a:hover{color:var(--ink)}
+.menu-panel .langs{display:flex;width:max-content;margin:6px 14px}
+.menu-panel .langs a{display:inline;padding:4px 9px;font-weight:600}
 .menu{display:none}
 .menu summary{list-style:none;cursor:pointer;padding:8px 12px;border:1px solid var(--line);border-radius:10px;background:var(--paper);font-size:15px;font-weight:600}
 .menu summary::-webkit-details-marker{display:none}
