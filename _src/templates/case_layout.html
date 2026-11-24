@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block schema %}
+<script type="application/ld+json">
+{{ tojson({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": page.title.split(' · ')[0],
+  "description": page.description,
+  "url": site.url + page.url,
+  "dateModified": page.updated,
+  "author": {"@id": site.url + "/#petr", "@type": "Person", "name": "Petr Belyaev"},
+  "publisher": {"@id": site.url + "/#org"}
+}) }}
+</script>
+{% endblock %}
+{% block content %}
+    <div class="page-hero">
+      <span class="eyebrow">Case · {{ page.industry }}</span>
+      <h1>{% block h1 %}{% endblock %}</h1>
+      <p class="lead">{% block lead %}{% endblock %}</p>
+      <ul class="tools small" aria-label="Stack">{% for t in page.stack %}<li>{{ t }}</li>{% endfor %}</ul>
+    </div>
+
+    <section aria-labelledby="sit-h">
+      <div class="split">
+        <div>
+          <h2 id="sit-h">The situation</h2>
+          {% block situation %}{% endblock %}
+        </div>
+        <div>
+          <h2>What I built</h2>
+          {% block built %}{% endblock %}
+        </div>
+      </div>
+    </section>
+
+    {% block extra %}{% endblock %}
+
+    <section aria-labelledby="note-h">
+      <div class="split">
+        <div>
+          <h2 id="note-h">Where it stands</h2>
+          {% block status %}{% endblock %}
+        </div>
+        <div class="note"><b>About client names.</b> I don’t publish client names or figures from their business without permission. The setup described here is real; details that could identify the client are left out.</div>
+      </div>
+    </section>
+
+    <section aria-labelledby="svc-h">
+      <h2 id="svc-h">Services used</h2>
+      <div class="cards">
+        {% for url in services_used %}{% set r = page_by_url[url] %}
+        <a class="card" href="{{ link(r.url) }}"><h3>{{ r.nav }}</h3><p>{{ r.summary }}</p><span class="more">Learn more</span></a>
+        {% endfor %}
+      </div>
+    </section>
+{% endblock %}
+{% block contact_title %}Have a similar setup in mind?{% endblock %}

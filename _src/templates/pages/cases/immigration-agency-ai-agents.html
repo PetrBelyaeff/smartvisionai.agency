@@ -1,0 +1,30 @@
+{% extends "case_layout.html" %}
+{% set services_used = ["/services/ai-sales-agents/", "/services/crm-messenger-integrations/", "/services/managed-services/"] %}
+{% block h1 %}AI agents and a lead flow that doesn’t lose people: an immigration and citizenship agency{% endblock %}
+{% block lead %}Leads come from ads, website forms, TikTok and messengers, in Russian and English, at any hour. I run the AI agents, the CRM side and the automations that move each lead to the right manager.{% endblock %}
+{% block situation %}
+          <p>The agency sells residence and citizenship programs in several countries. A typical buyer asks a lot of questions before a first call: requirements, timelines, costs, documents.</p>
+          <p>Leads arrive through many channels at once — website forms on two sites, paid social, TikTok, WhatsApp and other messengers. Managers were answering the same questions over and over, and leads that wrote at night waited until morning.</p>
+{% endblock %}
+{% block built %}
+          <ul class="checks">
+            <li><b>Main AI agent</b> on the CRM’s open lines: answers from a knowledge base of programs and country presentations, qualifies, offers a consultation.</li>
+            <li><b>Two-line setup for TikTok leads</b> in a separate CRM: a first-line agent replies fast and filters, a second-line agent goes deeper with qualified leads.</li>
+            <li><b>Lead routing</b> to managers, including temporary reassignment when someone is on leave.</li>
+            <li><b>Form protection</b> on both websites: phone numbers that cannot exist are rejected at the form, before they become fake leads.</li>
+            <li><b>n8n automations</b> between websites, CRM and messengers, with failure alerts.</li>
+          </ul>
+{% endblock %}
+{% block extra %}
+    <section aria-labelledby="lessons-h">
+      <h2 id="lessons-h">What this project taught me</h2>
+      <div class="cards three">
+        <div class="card"><h3>Silent failures are the expensive ones</h3><p>A step that times out but reports success looks fine for weeks. Every production flow now has alerts on the real outcome, not on “request sent”.</p></div>
+        <div class="card"><h3>Agents need a change log</h3><p>Every edit to an agent’s instructions or knowledge base is recorded, so any odd answer can be traced to a specific change.</p></div>
+        <div class="card"><h3>One fix, both websites</h3><p>When a business runs two sites, every change is applied to both and checked on both. Half-applied fixes create the strangest bugs.</p></div>
+      </div>
+    </section>
+{% endblock %}
+{% block status %}
+          <p>The agency is on managed services: I monitor the agents and flows, update the knowledge base as programs change, and add automations as new channels appear. Work is tracked per task and reported monthly.</p>
+{% endblock %}

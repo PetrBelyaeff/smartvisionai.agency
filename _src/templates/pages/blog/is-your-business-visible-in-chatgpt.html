@@ -1,0 +1,49 @@
+{% extends "post_layout.html" %}
+{% block article %}
+      <p>More and more buyers start with a question to an AI assistant instead of a search box: “which agency can help me get residency in Greece”, “best tour operator for a northern lights trip”, “who sets up ClickUp for a small agency”. The assistant answers with a few names. If yours is not among them, you never hear about that buyer.</p>
+      <p>Most business owners I talk to have no idea whether they are in those answers. Some have asked ChatGPT once, saw their name or didn’t, and drew a conclusion. That is not a measurement. Here is how I measure it for clients, and what the numbers can and cannot tell you.</p>
+
+      <h2>Step 1. Ask the questions your buyers ask — without your name</h2>
+      <p>The most common mistake is asking “what do you know about [my company]?”. The assistant will happily tell you, and it proves nothing. Buyers who don’t know you yet don’t type your name.</p>
+      <p>So the first step is a list of real buyer questions about your niche, in the languages of your market. Usually 30 to 100 of them is enough to see a pattern. Good sources are your sales calls, the questions your AI agent or managers get most often, and the queries your SEO or content contractor already works with.</p>
+      <blockquote>A useful question sounds like a buyer, not like a marketer: “how long does it take to get a residence permit in Portugal”, not “top immigration services Portugal 2026”.</blockquote>
+
+      <h2>Step 2. Ask more than one assistant, more than once</h2>
+      <p>ChatGPT, Claude and Perplexity give different answers to the same question, and each of them gives different answers on different runs. One run is a snapshot, not a fact.</p>
+      <p>That’s why I ask every question to each assistant several times per run, with web search turned on, and count the <em>share</em> of answers that mention the brand. “Mentioned in 14% of answers” is a number you can track. “ChatGPT mentioned us yesterday” is an anecdote.</p>
+
+      <h2>Step 3. Read the answers like a competitor analyst</h2>
+      <p>For each answer I record four things:</p>
+      <ol>
+        <li><strong>Is the brand mentioned</strong> — by any of its names, spellings or domains. Brands are written in surprisingly many ways, so I keep a small dictionary of variants for each client; without it, part of the mentions gets lost.</li>
+        <li><strong>Is the website linked</strong> as a source.</li>
+        <li><strong>The position</strong> among the companies named.</li>
+        <li><strong>Who is named instead</strong>. This is often the most valuable part: the list of competitors that assistants recommend for your buyers’ questions, and the sources they cite for them.</li>
+      </ol>
+
+      <h2>Step 4. Get a baseline before anyone “optimizes”</h2>
+      <p>If you are about to pay for GEO (generative engine optimization) — content and changes meant to get you into AI answers — measure first. Otherwise, in three months you will have the contractor’s report and nothing to compare it with.</p>
+      <p>Baselines are often sobering. In one baseline I measured for a client in a competitive service niche, the brand appeared in 1 answer out of 92 to questions that didn’t include its name. That is not a disaster; it’s a starting point that makes every later change visible.</p>
+
+      <h2>What the numbers can’t tell you</h2>
+      <p>I’d rather say this upfront than have a client discover it later:</p>
+      <ul>
+        <li><strong>API answers are close to, but not the same as, what a person sees.</strong> I query the assistants through their APIs, without a user’s chat history, location or personalization. That makes runs repeatable — which is what you need to track change — but one person’s screen can differ.</li>
+        <li><strong>Google’s AI Overviews are a separate story.</strong> They can’t be queried the same way and need a paid search-data service. If Google’s AI answers matter in your market, that is a separate, priced addition.</li>
+        <li><strong>Visibility is not sales.</strong> Being mentioned more often is a leading indicator. Whether it brings buyers is answered by your CRM: ask new leads where they heard about you and add “AI assistant” as an option.</li>
+      </ul>
+
+      <h2>What to do with the result</h2>
+      <p>If the share of mentions is low, the usual levers are the same ones that help regular search, with a few additions:</p>
+      <ul>
+        <li>Pages that answer the exact questions buyers ask, in plain language, one question per section.</li>
+        <li>Clear facts that are easy to quote: who you serve, where, for how much, how long it takes.</li>
+        <li>Structured data (schema.org) and a simple <code>llms.txt</code> file that describes your site for AI tools.</li>
+        <li>Presence in the sources assistants already cite for your niche — the competitor list from Step 3 shows where those are.</li>
+      </ul>
+      <p>Then you run the same questions again next month and see whether the number moved.</p>
+
+      <h2>Can you do this yourself?</h2>
+      <p>Yes, with a spreadsheet and patience: 50 questions, three assistants, three repeats is 450 answers to read every month. That’s exactly why I automated it — an n8n workflow sends the questions on a schedule, parses the answers, writes the history to a Google Sheet and sends a short summary to Telegram.</p>
+      <p>If you want that set up for your business, here is <a href="{{ link('/services/ai-search-visibility/') }}">how the AI search visibility service works</a>.</p>
+{% endblock %}

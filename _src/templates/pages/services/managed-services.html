@@ -1,0 +1,39 @@
+{% extends "service_layout.html" %}
+{% set faq = [
+  ("How is managed service billed?", "By the hour, with time tracked per task. You get a monthly report: what was done, how long it took, and the total."),
+  ("How fast do you react?", "Breakages in production flows take priority over planned work. Improvements are planned weekly. Response times can be fixed in the agreement."),
+  ("Can I see what you are working on?", "Yes. Every task lives in ClickUp with guest access for you, and updates reach your team chat. You see the queue, the status and the time spent."),
+  ("Can I stop at any time?", "Yes. You keep everything: accounts, servers, workflows, documentation. Nothing is locked to me."),
+] %}
+{% set related = ["/cases/immigration-agency-ai-agents/", "/services/ai-sales-agents/", "/services/crm-messenger-integrations/"] %}
+{% block eyebrow %}Service · Managed services{% endblock %}
+{% block h1 %}Managed services: your agents and automations keep working after launch{% endblock %}
+{% block lead %}AI agents drift, integrations break when a vendor changes an API, and the business keeps changing. I stay on after launch to monitor, fix and improve — with every hour visible to you.{% endblock %}
+{% block body %}
+    <section aria-labelledby="what-h">
+      <h2 id="what-h">What’s included</h2>
+      <div class="cards three">
+        <div class="card"><h3>Monitoring</h3><p>Error alerts on production flows and regular review of agent conversations.</p></div>
+        <div class="card"><h3>Fixes</h3><p>Broken integrations, wrong answers and failed messages handled first.</p></div>
+        <div class="card"><h3>Weekly improvements</h3><p>A short weekly plan: what I will change in agents, CRM and ClickUp, and why.</p></div>
+        <div class="card"><h3>Knowledge base updates</h3><p>New prices, services and documents added to the agents’ knowledge, with a log of every change.</p></div>
+        <div class="card"><h3>New automations</h3><p>When a manual routine appears, it gets scoped and automated.</p></div>
+        <div class="card"><h3>Monthly report</h3><p>Plain-language report of work done and time spent, ready to check against the tasks.</p></div>
+      </div>
+    </section>
+
+    <section aria-labelledby="how-h">
+      <div class="split">
+        <div>
+          <h2 id="how-h">How it runs week to week</h2>
+          <ol class="steps">
+            <li><b>Requests</b><span>Your team writes in the work chat; requests become tasks in ClickUp.</span></li>
+            <li><b>Weekly plan</b><span>Priorities for the week, agreed with you.</span></li>
+            <li><b>Work with a visible log</b><span>Progress notes and time on every task.</span></li>
+            <li><b>Month-end report</b><span>What was done, time per task, total.</span></li>
+          </ol>
+        </div>
+        <div class="note"><b>Why one person.</b> The person who built your system is the one who supports it. No tickets bouncing between departments, no re-explaining the context.</div>
+      </div>
+    </section>
+{% endblock %}

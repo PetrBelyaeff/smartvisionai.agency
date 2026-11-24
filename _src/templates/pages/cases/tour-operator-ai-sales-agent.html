@@ -1,0 +1,26 @@
+{% extends "case_layout.html" %}
+{% set services_used = ["/services/ai-sales-agents/", "/services/crm-messenger-integrations/"] %}
+{% block h1 %}A 24/7 AI sales agent that knows every tour: a regional tour operator{% endblock %}
+{% block lead %}A tour operator with about 30 tours and 100 accommodation options needed every inquiry answered quickly and correctly — including at night and on weekends — and passed to managers ready for a call.{% endblock %}
+{% block situation %}
+          <p>Inquiries come from the website and several messengers. Questions are detailed: dates, group size, what is included, where to stay. Answering well requires knowing the whole catalog, and managers were spending their day on first replies instead of selling.</p>
+          <p>The project was agreed as a fixed-price build in five stages, with a written specification and acceptance criteria.</p>
+{% endblock %}
+{% block built %}
+          <ul class="checks">
+            <li><b>Knowledge base</b> of tours and accommodation, structured so the agent finds the right option instead of guessing.</li>
+            <li><b>Two-agent design</b>: a main sales agent leads the conversation, a catalog sub-agent searches tours and accommodation and returns structured options.</li>
+            <li><b>Qualification and handoff</b>: the agent collects dates, group and preferences, offers a call or an online meeting and passes the lead to a manager in amoCRM.</li>
+            <li><b>Channels</b>: website and messengers, all landing in one CRM pipeline.</li>
+            <li><b>Client-owned infrastructure</b>: the automation server belongs to the client, with daily backups.</li>
+          </ul>
+{% endblock %}
+{% block extra %}
+    <section aria-labelledby="why-h">
+      <h2 id="why-h">Why two agents instead of one</h2>
+      <p class="section-lead">One agent that holds the conversation and also searches a large catalog tends to do both badly: long instructions, slow answers, mixed-up options. Splitting the catalog search into a sub-agent keeps the sales agent focused on the client and makes catalog answers consistent and easy to test.</p>
+    </section>
+{% endblock %}
+{% block status %}
+          <p>The agent is built in stages against the agreed specification; each stage is accepted by the client before the next one starts. Every change to the agents is recorded in a change log.</p>
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="page-hero">
+      <span class="eyebrow">Contact</span>
+      <h1>Let’s talk about your workflow</h1>
+      <p class="lead">The fastest way is a 30-minute video call: you tell me how leads and client work move today, I tell you honestly what is worth automating and what is not.</p>
+      <div class="ctas" style="margin-bottom:0">
+        <a class="btn btn-primary" href="{{ site.booking }}" target="_blank" rel="noopener">Book a call</a>
+        <a class="btn btn-ghost" href="mailto:{{ site.email }}">{{ site.email }}</a>
+      </div>
+    </div>
+
+    <section aria-labelledby="prep-h">
+      <div class="split">
+        <div>
+          <h2 id="prep-h">Useful to have before the call</h2>
+          <ul class="checks plain">
+            <li>Where your leads come from and roughly how many per month.</li>
+            <li>Which CRM, messengers and task tools you use.</li>
+            <li>What takes your team the most manual time today.</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Details</h2>
+          <ul class="checks plain">
+            <li>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            <li>Based in Querétaro, Mexico · GMT-6</li>
+            <li>Calls in English or Russian</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+{% endblock %}
+{% block contact %}{% endblock %}

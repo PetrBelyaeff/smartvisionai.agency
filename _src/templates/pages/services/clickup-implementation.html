@@ -1,0 +1,42 @@
+{% extends "service_layout.html" %}
+{% set faq = [
+  ("We already use ClickUp, but it’s a mess. Can you fix it?", "Yes, and this is the most common starting point. I begin with an audit: what spaces, lists, statuses and fields exist, which of them people actually use, and where work falls through the cracks. Then I propose a target structure and migrate to it without losing history."),
+  ("Do we need a paid ClickUp plan?", "Not always. Many small teams start on the free plan. A paid plan becomes worth it when you need more automations, guests, time tracking reports or dashboards. As a ClickUp Verified Service Partner I can help you choose the plan and arrange it."),
+  ("Can ClickUp work with our CRM and messengers?", "Yes. I connect ClickUp to Kommo/amoCRM, Bitrix24, Telegram, WhatsApp and Google Workspace through n8n or Make — for example, a paid deal in the CRM creates a project in ClickUp, and task updates reach the client’s chat."),
+  ("How do you get the team to actually use it?", "By designing the workspace around how the team already works, not around a template, and by short onboarding sessions with written instructions. A structure that people need to be forced into is a wrong structure."),
+  ("Can you move us from Trello, Asana, Notion or spreadsheets?", "Yes. I plan the migration so that active work moves first and history is preserved where it matters."),
+] %}
+{% set related = ["/clickup-partner/", "/cases/barbershop-franchise-clickup-platform/", "/services/crm-messenger-integrations/"] %}
+{% block eyebrow %}Service · ClickUp{% endblock %}
+{% block h1 %}ClickUp implementation for delivery and client operations{% endblock %}
+{% block lead %}A workspace where every project, client request and deadline has one place, one owner and one status — built around how your team actually works. I have been running my own studio and client projects in ClickUp since 2023.{% endblock %}
+{% block body %}
+    <section aria-labelledby="what-h">
+      <div class="split">
+        <div>
+          <h2 id="what-h">What I set up</h2>
+          <p class="section-lead" style="margin-bottom:0">A system the team uses without being reminded — and that a manager can read in one glance.</p>
+        </div>
+        <ul class="checks">
+          <li><b>Structure</b>: spaces, folders and lists that mirror your services and clients.</li>
+          <li><b>Statuses and custom fields</b> that match your real workflow, from request to delivery.</li>
+          <li><b>Automations</b>: assignment, due dates, recurring tasks, notifications.</li>
+          <li><b>Time tracking and reports</b> by client, project and type of work — ready for billing.</li>
+          <li><b>Dashboards</b> for the owner: workload, overdue work, what was delivered this week.</li>
+          <li><b>Client access</b>: guests see their own tasks and updates, nothing else.</li>
+          <li><b>Docs and knowledge base</b>: standards, instructions and onboarding next to the work.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section aria-labelledby="how-h">
+      <h2 id="how-h">How the project runs</h2>
+      <ol class="steps">
+        <li><b>Audit or discovery</b><span>How work flows today, what tools are in use, where tasks get lost.</span></li>
+        <li><b>Target structure in writing</b><span>Spaces, lists, statuses, fields, automations and access — agreed before I build.</span></li>
+        <li><b>Build and migration</b><span>Workspace set up, active work moved in, integrations connected.</span></li>
+        <li><b>Onboarding</b><span>Short sessions for the team and the owner, plus written instructions inside ClickUp.</span></li>
+        <li><b>First month of support</b><span>I watch how the team uses it and adjust what doesn’t fit.</span></li>
+      </ol>
+    </section>
+{% endblock %}

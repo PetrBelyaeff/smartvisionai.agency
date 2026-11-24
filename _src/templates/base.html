@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }}</title>
+<meta name="description" content="{{ page.description }}">
+{% if page.get('noindex') %}
+<meta name="robots" content="noindex">
+{% else %}
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+{% endif %}
+<meta property="og:type" content="{{ 'article' if page.kind == 'post' else 'website' }}">
+<meta property="og:site_name" content="Smart Vision AI">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:title" content="{{ page.get('og_title', page.title) }}">
+<meta property="og:description" content="{{ page.description }}">
+<meta property="og:image" content="{{ site.url }}{{ site.og_image }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f6f2ec">
+<link rel="icon" href="{{ asset('/favicon.svg') }}" type="image/svg+xml">
+<link rel="stylesheet" href="{{ asset('/assets/site.css') }}">
+<script type="application/ld+json">
+{{ tojson({
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": site.url + "/#org",
+  "name": "Smart Vision AI",
+  "url": site.url + "/",
+  "image": site.url + "/petr-belyaev-4x5-v2.jpg",
+  "logo": site.url + "/favicon.svg",
+  "email": site.email,
+  "areaServed": ["United States", "Mexico", "Canada", "Worldwide"],
+  "address": {"@type": "PostalAddress", "addressLocality": "Querétaro", "addressCountry": "MX"},
+  "founder": {"@type": "Person", "@id": site.url + "/#petr", "name": "Petr Belyaev", "jobTitle": "Founder", "url": site.url + "/"},
+  "knowsLanguage": ["en", "ru"]
+}) }}
+</script>
+{% if crumbs %}
+<script type="application/ld+json">
+{% set items = [] %}{% for c in crumbs %}{% set _ = items.append({"@type": "ListItem", "position": loop.index, "name": c.name, "item": site.url + c.url}) %}{% endfor %}{% set _ = items.append({"@type": "ListItem", "position": crumbs|length + 1, "name": page.nav}) %}{{ tojson({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": items}) }}
+</script>
+{% endif %}
+{% block schema %}{% endblock %}
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="{{ link('/') }}" aria-label="Smart Vision AI home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#1f6f66"/><path d="M8 16c2.6-4.6 5.3-6.9 8-6.9s5.4 2.3 8 6.9c-2.6 4.6-5.3 6.9-8 6.9S10.6 20.6 8 16z" fill="none" stroke="#fff" stroke-width="2"/><circle cx="16" cy="16" r="3.2" fill="#fff"/></svg>
+      Smart Vision AI
+    </a>
+    <nav class="nav" aria-label="Main">
+      {% for url, name in site.nav %}
+      {% if url != '/contact/' %}<a href="{{ link(url) }}"{% if page.url == url or (url != '/' and page.url.startswith(url)) %} aria-current="page"{% endif %}>{{ name }}</a>{% endif %}
+      {% endfor %}
+      <a class="btn btn-primary" href="{{ site.booking }}" target="_blank" rel="noopener">Book a call</a>
+    </nav>
+    <details class="menu">
+      <summary aria-label="Open menu">Menu</summary>
+      <div class="menu-panel">
+        <a href="{{ link('/') }}">Home</a>
+        {% for url, name in site.nav %}<a href="{{ link(url) }}">{{ name }}</a>{% endfor %}
+        <a class="btn btn-primary" href="{{ site.booking }}" target="_blank" rel="noopener">Book a call</a>
+      </div>
+    </details>
+  </header>
+
+  <main id="main">
+    {% if crumbs %}
+    <nav aria-label="Breadcrumb">
+      <ol class="crumbs">
+        {% for c in crumbs %}<li><a href="{{ link(c.url) }}">{{ c.name }}</a></li>{% endfor %}
+        <li aria-current="page">{{ page.nav }}</li>
+      </ol>
+    </nav>
+    {% endif %}
+    {% block content %}{% endblock %}
+
+    {% block contact %}
+    <section class="band" aria-labelledby="contact-h">
+      <div class="contact">
+        <div>
+          <h2 id="contact-h">{% block contact_title %}Let’s talk about your workflow{% endblock %}</h2>
+          <p>{% block contact_text %}Book a 30-minute video call or write to me directly. I reply within one business day.{% endblock %}</p>
+        </div>
+        <div class="ctas">
+          <a class="btn btn-primary" href="{{ site.booking }}" target="_blank" rel="noopener">Book a call</a>
+          <a class="btn btn-ghost" href="mailto:{{ site.email }}">Email me</a>
+        </div>
+      </div>
+    </section>
+    {% endblock %}
+  </main>
+
+  <footer>
+    <div class="foot-grid">
+      <div>
+        <p><b style="color:var(--ink)">Smart Vision AI</b></p>
+        <p>AI implementation studio run by Petr Belyaev.<br>Querétaro, Mexico · GMT-6 · English &amp; Russian</p>
+        <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>{% for s in services %}<li><a href="{{ link(s.url) }}">{{ s.nav }}</a></li>{% endfor %}</ul>
+      </div>
+      <div>
+        <h4>Cases</h4>
+        <ul>{% for c in cases %}<li><a href="{{ link(c.url) }}">{{ c.nav }}</a></li>{% endfor %}</ul>
+      </div>
+      <div>
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="{{ link('/clickup-partner/') }}">ClickUp partner</a></li>
+          <li><a href="{{ link('/blog/') }}">Blog</a></li>
+          <li><a href="{{ link('/contact/') }}">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <p>© {{ site.year }} Smart Vision AI · Petr Belyaev · Querétaro, Mexico</p>
+    <p>ClickUp is a trademark of Mango Technologies, Inc. Smart Vision AI is an independent service partner and is not affiliated with or acting on behalf of ClickUp. Other product names are trademarks of their respective owners.</p>
+  </footer>
+</div>
+</body>
+</html>

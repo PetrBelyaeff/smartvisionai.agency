@@ -1,0 +1,39 @@
+{% extends "service_layout.html" %}
+{% set faq = [
+  ("What does “Verified Service Partner” mean?", "ClickUp runs a partner program for consultants who implement ClickUp for clients. I signed the partner agreement and completed ClickUp’s partner training, and Smart Vision AI is listed as a service partner. It does not make me a ClickUp employee: I work for you, not for ClickUp."),
+  ("How is buying ClickUp through you priced?", "You see the plan and its price before you decide. Implementation work is priced separately in the written scope."),
+  ("We are on the free plan. Should we upgrade?", "Only if a paid feature solves a real problem: more automations, guests, time tracking reports, dashboards or permissions. I tell you which plan fits — including when the free plan is enough."),
+  ("Can you help a team that already has a paid plan?", "Yes. Audit, cleanup, automations and onboarding are useful on any plan."),
+] %}
+{% set related = ["/services/clickup-implementation/", "/cases/barbershop-franchise-clickup-platform/", "/services/crm-messenger-integrations/"] %}
+{% block schema %}{{ super() }}{% endblock %}
+{% block eyebrow %}ClickUp Verified Service Partner{% endblock %}
+{% block h1 %}Your ClickUp partner: from first workspace to paid plan{% endblock %}
+{% block lead %}Smart Vision AI is a ClickUp Verified Service Partner. I help small and mid-sized teams choose the right plan, set up the workspace, move from other tools and get the team using it — with one person accountable for the result.{% endblock %}
+{% block body %}
+    <section aria-labelledby="what-h">
+      <h2 id="what-h">What I do as a partner</h2>
+      <div class="cards three">
+        <div class="card"><h3>Workspace audit</h3><p>A review of your current ClickUp: structure, statuses, fields, automations, permissions. You get a written list of what to keep, fix and remove.</p></div>
+        <div class="card"><h3>Plan selection</h3><p>Which ClickUp plan fits your team size and needs — and when the free plan is enough.</p></div>
+        <div class="card"><h3>Implementation</h3><p>Workspace built around your services, clients and delivery process. <a href="{{ link('/services/clickup-implementation/') }}">More on implementation</a>.</p></div>
+        <div class="card"><h3>Migration</h3><p>From Trello, Asana, Notion, Bitrix24 tasks or spreadsheets, active work first.</p></div>
+        <div class="card"><h3>Integrations</h3><p>ClickUp connected to your CRM, messengers and Google Workspace through n8n.</p></div>
+        <div class="card"><h3>Onboarding</h3><p>Short sessions for the team and the owner, plus written instructions inside ClickUp.</p></div>
+      </div>
+    </section>
+
+    <section aria-labelledby="why-h">
+      <div class="split">
+        <div>
+          <h2 id="why-h">Why work with a partner</h2>
+          <ul class="checks">
+            <li>ClickUp is flexible enough to become a mess. A partner who builds workspaces for clients saves you the trial and error.</li>
+            <li>One contact for the plan, the setup and the integrations.</li>
+            <li>I use ClickUp every day to run my own studio — time tracking, client reporting, task automations.</li>
+          </ul>
+        </div>
+        <div class="note"><b>Independence.</b> ClickUp is a trademark of Mango Technologies, Inc. Smart Vision AI is an independent service partner and is not affiliated with or acting on behalf of ClickUp.</div>
+      </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block schema %}
+<script type="application/ld+json">
+{{ tojson({
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": page.nav,
+  "description": page.description,
+  "url": site.url + page.url,
+  "provider": {"@id": site.url + "/#org"},
+  "areaServed": ["United States", "Mexico", "Canada", "Worldwide"]
+}) }}
+</script>
+{% if faq %}
+<script type="application/ld+json">
+{% set qa = [] %}{% for q, a in faq %}{% set _ = qa.append({"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a|striptags}}) %}{% endfor %}{{ tojson({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": qa}) }}
+</script>
+{% endif %}
+{% endblock %}
+{% block content %}
+    <div class="page-hero">
+      <span class="eyebrow">{% block eyebrow %}Service{% endblock %}</span>
+      <h1>{% block h1 %}{% endblock %}</h1>
+      <p class="lead">{% block lead %}{% endblock %}</p>
+      <div class="ctas" style="margin-bottom:0">
+        <a class="btn btn-primary" href="{{ site.booking }}" target="_blank" rel="noopener">Book a call</a>
+        <a class="btn btn-ghost" href="mailto:{{ site.email }}">Email me</a>
+      </div>
+    </div>
+
+    {% block body %}{% endblock %}
+
+    {% if faq %}
+    <section aria-labelledby="faq-h">
+      <h2 id="faq-h">Questions clients ask</h2>
+      <div class="faq">
+        {% for q, a in faq %}
+        <details><summary>{{ q }}</summary><p>{{ a }}</p></details>
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
+
+    {% if related %}
+    <section aria-labelledby="related-h">
+      <h2 id="related-h">Related work</h2>
+      <div class="cards">
+        {% for url in related %}{% set r = page_by_url[url] %}
+        <a class="card" href="{{ link(r.url) }}">
+          <span class="tag">{{ r.get('industry', 'Service') if r.kind == 'case' else ('Blog' if r.kind == 'post' else 'Service') }}</span>
+          <h3>{{ r.summary if r.kind == 'case' else r.nav }}</h3>
+          {% if r.kind != 'case' %}<p>{{ r.summary }}</p>{% endif %}
+          <span class="more">{{ 'Read the case' if r.kind == 'case' else 'Read' if r.kind == 'post' else 'Learn more' }}</span>
+        </a>
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
+{% endblock %}

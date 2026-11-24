@@ -1,0 +1,24 @@
+# Smart Vision AI
+
+> Smart Vision AI is a one-person AI implementation studio run by Petr Belyaev in Querétaro, Mexico (GMT-6). It builds AI sales and support agents, implements ClickUp, connects CRMs and messengers through n8n, measures brand visibility in AI assistants, and supports these systems after launch. Clients are small and mid-sized service businesses that sell through messengers and CRMs. ClickUp Verified Service Partner. Languages: English, Russian. Contact: petr@smartvisionai.agency. Book a call: https://calendar.google.com/calendar/appointments/schedules/AcZssZ1QaeAtBbRm9E6dCOqYcLi57awQORRnsjI7x1G6maX2-XyD0c8wLhdUrsz5z5yCTS_GYiABaUnU
+
+## Services
+- [AI sales & support agents](https://smartvisionai.agency/services/ai-sales-agents/): Agents that answer, qualify and follow up leads in messengers and on your website, and hand the conversation to your team when a person is needed.
+- [ClickUp implementation](https://smartvisionai.agency/services/clickup-implementation/): Workspace structure, processes, statuses and automations for delivery and client operations, designed around how your team actually works.
+- [CRM & messenger integrations](https://smartvisionai.agency/services/crm-messenger-integrations/): Kommo/amoCRM, Bitrix24, Shopify, WhatsApp and Telegram connected to each other and to ClickUp through n8n and Make.
+- [AI search visibility](https://smartvisionai.agency/services/ai-search-visibility/): Regular checks of whether ChatGPT, Claude and Perplexity mention your brand when buyers ask about your niche — and who they recommend instead.
+- [Managed services](https://smartvisionai.agency/services/managed-services/): Monitoring, weekly improvements, reporting and new automations as your business grows.
+- [ClickUp Verified Service Partner](https://smartvisionai.agency/clickup-partner/): workspace audit, plan selection, implementation, migration and onboarding.
+
+## Cases
+- [Immigration & citizenship services](https://smartvisionai.agency/cases/immigration-agency-ai-agents/): AI agents on Bitrix24 open lines and a two-line TikTok setup in Kommo, lead routing to managers, two websites and n8n automations under ongoing support.
+- [E-commerce, Latin America](https://smartvisionai.agency/cases/ecommerce-unpaid-order-follow-up/): Shopify → Kommo → n8n → WhatsApp: every unpaid order gets a follow-up message without a manager remembering to send it.
+- [Travel & tourism](https://smartvisionai.agency/cases/tour-operator-ai-sales-agent/): An AI sales agent that knows about 30 tours and 100 accommodation options, answers 24/7 and passes qualified leads to managers in amoCRM.
+- [Franchising, beauty services](https://smartvisionai.agency/cases/barbershop-franchise-clickup-platform/): Franchise standards, team rules and marketing guides in ClickUp, plus an AI assistant that answers franchisees from the same knowledge base.
+
+## Blog
+- [Is your business visible in ChatGPT?](https://smartvisionai.agency/blog/is-your-business-visible-in-chatgpt/): A practical method to check whether AI assistants mention your brand — and what the numbers can and cannot tell you.
+- [When an AI sales agent should hand over to a person](https://smartvisionai.agency/blog/ai-sales-agent-human-handoff/): The handoff is where most AI sales agents lose deals. How I design the moment an agent passes a lead to a manager.
+
+## Contact
+- [Contact page](https://smartvisionai.agency/contact/)

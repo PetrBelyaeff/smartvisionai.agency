@@ -1,2 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://smartvisionai.agency/</loc></url></urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://smartvisionai.agency/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://smartvisionai.agency/services/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://smartvisionai.agency/services/ai-sales-agents/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://smartvisionai.agency/services/clickup-implementation/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://smartvisionai.agency/services/crm-messenger-integrations/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://smartvisionai.agency/services/ai-search-visibility/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://smartvisionai.agency/services/managed-services/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://smartvisionai.agency/clickup-partner/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://smartvisionai.agency/cases/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://smartvisionai.agency/cases/immigration-agency-ai-agents/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://smartvisionai.agency/cases/ecommerce-unpaid-order-follow-up/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://smartvisionai.agency/cases/tour-operator-ai-sales-agent/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://smartvisionai.agency/cases/barbershop-franchise-clickup-platform/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://smartvisionai.agency/blog/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://smartvisionai.agency/blog/is-your-business-visible-in-chatgpt/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://smartvisionai.agency/blog/ai-sales-agent-human-handoff/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://smartvisionai.agency/contact/</loc><lastmod>2026-11-24</lastmod></url>
+</urlset>

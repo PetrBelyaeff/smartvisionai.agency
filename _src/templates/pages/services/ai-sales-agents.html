@@ -1,0 +1,58 @@
+{% extends "service_layout.html" %}
+{% set faq = [
+  ("Will the agent replace my sales team?", "No. The agent takes the repetitive first part of the conversation — answering, qualifying, reminding — and hands warm leads to people. Your managers spend their time on conversations that can close."),
+  ("What if the agent says something wrong?", "The agent answers only from the knowledge base we approve together, and it has explicit rules for what it must not promise: prices outside the list, deadlines, guarantees. Unknown questions go to a person instead of being guessed. Every change to the agent’s instructions is logged, so any answer can be traced back."),
+  ("Which messengers and CRMs do you support?", "WhatsApp, Telegram, Instagram, website chat and other channels that the agent platform or your CRM can connect. On the CRM side I work with Kommo/amoCRM and Bitrix24 most often; other CRMs are possible through n8n if they have an API."),
+  ("Which language can the agent speak?", "The agent can answer in the language the client writes in. I build and test agents in English, Spanish and Russian."),
+  ("How long does a launch take?", "A first working version for one channel usually takes a few weeks, most of which is building and checking the knowledge base. The exact timeline goes into the written scope before work starts."),
+  ("What does it cost to run?", "There are two parts: my work (a fixed price for the build, then managed services if you need them) and running costs you pay directly — the agent platform, AI model usage and messenger fees. I estimate the running costs in the scope so there are no surprises."),
+] %}
+{% set related = ["/cases/tour-operator-ai-sales-agent/", "/cases/immigration-agency-ai-agents/", "/blog/ai-sales-agent-human-handoff/"] %}
+{% block eyebrow %}Service · AI agents{% endblock %}
+{% block h1 %}AI sales &amp; support agents that answer every lead and know when to call a person{% endblock %}
+{% block lead %}An agent replies in seconds in WhatsApp, Telegram, Instagram or your website chat, qualifies the lead, books the next step and writes everything to your CRM. When a conversation needs a human, it hands over with full context.{% endblock %}
+{% block body %}
+    <section aria-labelledby="what-h">
+      <div class="split">
+        <div>
+          <h2 id="what-h">What the agent does</h2>
+          <p class="section-lead" style="margin-bottom:0">The goal is not a chatbot that talks. The goal is fewer lost leads and more booked calls, with your team in control.</p>
+        </div>
+        <ul class="checks">
+          <li><b>Answers 24/7</b> from an approved knowledge base: services, prices, terms, documents, FAQs.</li>
+          <li><b>Qualifies</b> the lead with the questions your best manager would ask, and records the answers in CRM fields.</li>
+          <li><b>Moves the deal</b>: offers a call, books a slot, sends a presentation or a payment link.</li>
+          <li><b>Follows up</b> when a client goes quiet, with polite reminders on a schedule you control.</li>
+          <li><b>Hands over</b> to a manager on clear triggers — and tells the client what happens next.</li>
+          <li><b>Logs everything</b> in the CRM, so a manager picks up the conversation without asking the client to repeat.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section aria-labelledby="how-h">
+      <h2 id="how-h">How I build it</h2>
+      <p class="section-lead">Most of the work is not the AI itself but the sales logic around it.</p>
+      <ol class="steps">
+        <li><b>Map the conversation</b><span>Where leads come from, what they ask, what a qualified lead looks like, where your managers lose time today.</span></li>
+        <li><b>Build the knowledge base</b><span>Services, prices, documents and objections collected into a source the agent can rely on. You approve it before launch.</span></li>
+        <li><b>Write the instructions and rules</b><span>Tone, qualification questions, what the agent must never promise, when it escalates. Tested on real past conversations.</span></li>
+        <li><b>Connect channels and CRM</b><span>Messengers, website chat and Kommo/amoCRM or Bitrix24, with fields, pipeline stages and manager notifications.</span></li>
+        <li><b>Test, launch, watch</b><span>A test period with daily review of conversations, then fixes. After launch the agent stays under monitoring.</span></li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="fit-h">
+      <div class="split">
+        <div>
+          <h2 id="fit-h">A good fit if</h2>
+          <ul class="checks plain">
+            <li>Most of your leads arrive in messengers or website chat.</li>
+            <li>Managers answer the same questions every day.</li>
+            <li>Leads that write at night or on weekends go cold.</li>
+            <li>You have a CRM — or are ready to set one up.</li>
+          </ul>
+        </div>
+        <div class="note"><b>Honest limits.</b> An agent will not fix an unclear offer or a sales process nobody follows. If I see that the bottleneck is elsewhere — pricing, the website, the team’s workflow — I will say so on the first call.</div>
+      </div>
+    </section>
+{% endblock %}

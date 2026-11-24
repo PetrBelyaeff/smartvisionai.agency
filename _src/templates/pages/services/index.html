@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="page-hero">
+      <span class="eyebrow">Services</span>
+      <h1>Implementation projects and ongoing support</h1>
+      <p class="lead">I build the system that brings leads to a booked call and keeps client work organized — and then I keep it running. Pick one service or combine them.</p>
+    </div>
+
+    <section aria-labelledby="list-h" style="border-top:0;padding-top:0">
+      <h2 id="list-h" class="visually-hidden" style="position:absolute;left:-9999px">All services</h2>
+      <div class="cards">
+        {% for s in services %}
+        <a class="card" href="{{ link(s.url) }}">
+          <h3>{{ s.nav }}{% if s.url == '/services/ai-search-visibility/' %}<span class="badge">New</span>{% endif %}</h3>
+          <p>{{ s.summary }}</p>
+          <span class="more">Learn more</span>
+        </a>
+        {% endfor %}
+        <a class="card" href="{{ link('/clickup-partner/') }}">
+          <span class="tag">Partnership</span>
+          <h3>ClickUp Verified Service Partner</h3>
+          <p>Workspace audit, migration, onboarding and paid ClickUp plans arranged through a partner.</p>
+          <span class="more">About the partnership</span>
+        </a>
+      </div>
+    </section>
+
+    <section aria-labelledby="how-h">
+      <div class="about">
+        <div>
+          <h2 id="how-h">How every project starts</h2>
+          <p>With a 30-minute call and a written scope. The scope says what will be built, how it connects to your tools, what it costs, what running costs you pay directly, and how we know it works.</p>
+          <p>No work starts before you agree with the scope. That protects both sides from “I thought it would also…”.</p>
+        </div>
+        <ol class="steps">
+          <li><b>Intro call</b><span>Your sales process, your tools, where time and leads are lost.</span></li>
+          <li><b>Written scope</b><span>Deliverables, timeline, price and acceptance criteria.</span></li>
+          <li><b>Build &amp; launch</b><span>Set up, tested on real cases, handed over with instructions.</span></li>
+          <li><b>Support &amp; growth</b><span>Managed services if you want me to stay on.</span></li>
+        </ol>
+      </div>
+    </section>
+{% endblock %}

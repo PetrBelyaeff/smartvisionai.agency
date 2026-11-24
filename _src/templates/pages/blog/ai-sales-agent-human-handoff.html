@@ -1,0 +1,48 @@
+{% extends "post_layout.html" %}
+{% block article %}
+      <p>When a business owner imagines an AI sales agent, they imagine the conversation: fast, polite, always online. When I build one, most of my attention goes to a different moment — the second the agent stops and a person takes over. That handoff is where agents win or lose deals.</p>
+      <p>A badly designed handoff looks like this: the client has spent ten minutes explaining their situation to the agent, a manager appears, and the first thing they write is “Hello! How can I help you?”. The client has to repeat everything. Some don’t.</p>
+      <p>Here is how I design the handoff in the agents I build.</p>
+
+      <h2>1. Decide what the agent is for — and what it isn’t</h2>
+      <p>Before writing a single instruction, I agree with the owner on the agent’s job. Usually it is: answer the first questions, qualify, and bring a warm lead to a call or a manager. It is almost never “close the deal on its own”.</p>
+      <p>That decision defines the handoff. If the agent’s job ends at a qualified lead, then a qualified lead <em>is</em> the trigger — not a failure of the agent.</p>
+
+      <h2>2. Write explicit triggers</h2>
+      <p>“Hand over when needed” is not an instruction. The agent needs concrete triggers. The ones I use most often:</p>
+      <ul>
+        <li><strong>The lead is qualified</strong>: the agent has the answers your managers need (for example budget, timeline, destination, family size) and the client agreed to the next step.</li>
+        <li><strong>The client asks for a person</strong> — in any wording. Never argue with this.</li>
+        <li><strong>Money or commitments</strong>: discounts outside the price list, special payment terms, guarantees, legal questions. The agent doesn’t improvise here.</li>
+        <li><strong>The answer isn’t in the knowledge base</strong>. Guessing is worse than “let me connect you with a colleague who knows this exactly”.</li>
+        <li><strong>Emotion</strong>: a complaint, frustration, an existing client with a problem.</li>
+      </ul>
+
+      <h2>3. Hand over the context, not just the chat</h2>
+      <p>The manager should be able to continue the conversation without asking the client to repeat anything. So at the moment of handoff the agent does three things:</p>
+      <ol>
+        <li><strong>Fills the CRM fields</strong> — not a wall of text in a note, but the specific fields your pipeline uses: what the client wants, key parameters, what they were offered.</li>
+        <li><strong>Writes a short summary</strong> for the manager: who this is, what they want, what’s been answered, what’s open.</li>
+        <li><strong>Moves the deal</strong> to the right stage and assigns it to the right manager, so it shows up in their work queue — not just in a chat nobody is watching.</li>
+      </ol>
+
+      <h2>4. Tell the client what happens next</h2>
+      <p>From the client’s side, the handoff should feel like being passed to a colleague, not like being dropped. The agent says who will reply and roughly when — and that promise has to be true. If managers don’t work at night, the agent should not say “a manager will reply in five minutes” at 2 a.m.</p>
+      <blockquote>A handoff message that works: “I’ve passed your details to Anna, our specialist on this program. She’ll message you here tomorrow morning — you won’t need to repeat anything.”</blockquote>
+
+      <h2>5. Make sure a person actually picks it up</h2>
+      <p>The most painful failures I’ve seen were not bad AI answers. They were handoffs that went nowhere: a notification to a chat that nobody reads, a deal assigned to a manager on vacation, a technical step that silently failed while reporting success.</p>
+      <p>So the handoff gets the same treatment as any production integration:</p>
+      <ul>
+        <li>Routing rules that know who is working, including vacations and days off.</li>
+        <li>An alert if a handed-over lead hasn’t been picked up within an agreed time.</li>
+        <li>Monitoring on the real outcome — the deal is in the manager’s queue — not on “request sent”.</li>
+      </ul>
+
+      <h2>6. Review handoffs every week at first</h2>
+      <p>For the first weeks after launch I read the conversations where the agent handed over, and the ones where it didn’t but probably should have. Most fixes are small: a missing trigger, a CRM field that wasn’t filled, a message that sounded too robotic. Each change to the agent’s instructions goes into a change log, so if something odd happens later, it can be traced to a specific edit.</p>
+
+      <h2>The short version</h2>
+      <p>An AI agent doesn’t replace your sales team; it changes where your team starts the conversation. The better the handoff, the later — and warmer — that start is.</p>
+      <p>If you want an agent like this for your business, here is <a href="{{ link('/services/ai-sales-agents/') }}">how I build AI sales and support agents</a>.</p>
+{% endblock %}

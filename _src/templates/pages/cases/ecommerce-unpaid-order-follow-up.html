@@ -1,0 +1,19 @@
+{% extends "case_layout.html" %}
+{% set services_used = ["/services/crm-messenger-integrations/", "/services/ai-sales-agents/", "/services/managed-services/"] %}
+{% block h1 %}Every unpaid order gets a follow-up: an online store in Latin America{% endblock %}
+{% block lead %}An online store selling across Latin America lost money on orders that were placed but never paid. I connected the store, the CRM and WhatsApp so that follow-ups happen on time, every time.{% endblock %}
+{% block situation %}
+          <p>Buyers place an order and then don’t complete the payment — the card fails, they get distracted, they want to ask a question first. Each of these orders is a warm buyer, but reminding them depended on someone having time to do it by hand.</p>
+          <p>Buyers in the region expect to talk on WhatsApp, not email.</p>
+{% endblock %}
+{% block built %}
+          <ul class="checks">
+            <li><b>Shopify → Kommo</b>: new and unpaid orders become deals in the CRM pipeline with all order details.</li>
+            <li><b>n8n follow-up flow</b>: on a schedule, unpaid orders trigger a WhatsApp message through the official WhatsApp Cloud API from the store’s business number.</li>
+            <li><b>AI agent</b> to answer buyers’ questions in the conversation that follows.</li>
+          </ul>
+{% endblock %}
+
+{% block status %}
+          <p>The flow runs in production on a self-hosted n8n. The store is on managed services: I monitor the flow, adjust message timing and texts, and extend the automation as the store adds channels.</p>
+{% endblock %}

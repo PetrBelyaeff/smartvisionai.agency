@@ -1,0 +1,22 @@
+# Smart Vision AI
+
+> Smart Vision AI is a one-person AI implementation studio run by Petr Belyaev in Querétaro, Mexico (GMT-6). It builds AI sales and support agents, implements ClickUp, connects CRMs and messengers through n8n, measures brand visibility in AI assistants, and supports these systems after launch. Clients are small and mid-sized service businesses that sell through messengers and CRMs. ClickUp Verified Service Partner. Languages: English, Russian. Contact: {{ site.email }}. Book a call: {{ site.booking }}
+
+## Services
+{% for s in services %}
+- [{{ s.nav }}]({{ site.url }}{{ s.url }}): {{ s.summary }}
+{% endfor %}
+- [ClickUp Verified Service Partner]({{ site.url }}/clickup-partner/): workspace audit, plan selection, implementation, migration and onboarding.
+
+## Cases
+{% for c in cases %}
+- [{{ c.industry }}]({{ site.url }}{{ c.url }}): {{ c.summary }}
+{% endfor %}
+
+## Blog
+{% for p in posts %}
+- [{{ p.nav }}]({{ site.url }}{{ p.url }}): {{ p.summary }}
+{% endfor %}
+
+## Contact
+- [Contact page]({{ site.url }}/contact/)

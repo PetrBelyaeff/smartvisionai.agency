@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block schema %}
+<script type="application/ld+json">
+{{ tojson({
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": page.nav,
+  "description": page.description,
+  "url": site.url + page.url,
+  "datePublished": page.date,
+  "dateModified": page.updated,
+  "image": site.url + site.og_image,
+  "author": {"@id": site.url + "/#petr", "@type": "Person", "name": "Petr Belyaev", "url": site.url + "/"},
+  "publisher": {"@id": site.url + "/#org"}
+}) }}
+</script>
+{% endblock %}
+{% block content %}
+    <article class="prose">
+      <header class="page-hero" style="padding-bottom:24px">
+        <span class="eyebrow">Blog</span>
+        <h1>{{ page.nav }}</h1>
+        <div class="meta"><span>Petr Belyaev</span><time datetime="{{ page.date }}">{{ page.date_label }}</time><span>{{ page.read }}</span></div>
+      </header>
+      {% block article %}{% endblock %}
+      <div class="author">
+        <img src="{{ asset('/petr-belyaev-4x5-v2-660.jpg') }}" alt="Petr Belyaev" width="56" height="56">
+        <p><b>Petr Belyaev</b> runs Smart Vision AI, a one-person AI implementation studio: AI sales agents, ClickUp systems and integrations for service businesses. ClickUp Verified Service Partner.</p>
+      </div>
+    </article>
+{% endblock %}

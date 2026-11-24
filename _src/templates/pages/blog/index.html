@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="page-hero">
+      <span class="eyebrow">Blog</span>
+      <h1>Notes from hands-on client work</h1>
+      <p class="lead">AI agents in sales, ClickUp, automation and AI search visibility — what works, what breaks and how I deal with it.</p>
+    </div>
+
+    <section aria-label="Posts" style="border-top:0;padding-top:0">
+      <div class="posts">
+        {% for p in posts %}
+        <a class="post-card" href="{{ link(p.url) }}">
+          <div class="meta"><time datetime="{{ p.date }}">{{ p.date_label if p.get('date_label') else p.date }}</time><span>{{ p.read }}</span></div>
+          <h2>{{ p.nav }}</h2>
+          <p>{{ p.summary }}</p>
+        </a>
+        {% endfor %}
+      </div>
+    </section>
+{% endblock %}
